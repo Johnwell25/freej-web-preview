@@ -219,3 +219,51 @@ main details[open] > summary::after{transform:rotate(45deg)}
 }
 main td{white-space:nowrap}
 main td:has(> img),main td:first-child{white-space:normal}
+
+/* ===== Verification flow: one step at a time ===== */
+[hidden]{display:none!important}
+.vf-top{display:flex;align-items:center;gap:8px;min-height:44px;margin-bottom:-12px}
+.vf-back{width:44px;height:44px;margin-left:-10px;border:0;border-radius:999px;background:transparent;color:#1B2B2C;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background-color .15s ease,transform .1s ease}
+.vf-back:hover{background:rgba(27,43,44,.06)}
+.vf-back:active{transform:scale(.94)}
+.vf-count{font-size:14px;font-weight:700;letter-spacing:.01em;color:#146A6E}
+.vf-progress{height:6px;border-radius:999px;background:#E9E1D3;overflow:hidden}
+.vf-bar{display:block;height:100%;width:100%;border-radius:inherit;background:#197E83;transform-origin:left center;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.vf-step{scroll-margin-top:96px}
+.vf-step h2:focus{outline:none}
+.vf-step button:disabled{opacity:.38;cursor:not-allowed;box-shadow:none}
+.vf-step button:disabled:active{transform:none}
+[data-id-method].vf-chosen{background:#146A6E!important;border-color:#146A6E!important;color:#FFFFFF!important}
+[data-otp].vf-ok .otp{border-color:#197E83!important;background:#EEF7F7}
+.otp{transition:border-color .15s ease,background-color .15s ease}
+.vf-success{width:72px;height:72px;border-radius:999px;background:#197E83;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(25,126,131,.28)}
+.vf-tick{stroke-dasharray:24;stroke-dashoffset:24}
+.vf-celebrate .vf-success{animation:vf-pop .5s cubic-bezier(.2,.8,.2,1) both}
+.vf-celebrate .vf-tick{animation:vf-draw .4s .25s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes vf-pop{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+@keyframes vf-draw{to{stroke-dashoffset:0}}
+@media (max-width:640px){
+  .vf-step{border-radius:24px!important}
+  .vf-step .vf-next,.vf-step a.btn[data-for]{width:100%;justify-content:center}
+  .vf-step > div:last-child:has(> .vf-next){padding-top:0!important}
+  .vf-step [data-send-code]{flex:1 1 100%}
+  main h1:has(+ .vf-intro),main div:has(> .vf-top) h1{font-size:30px!important}
+}
+@media (prefers-reduced-motion:reduce){
+  .vf-bar{transition:none}
+  .vf-celebrate .vf-success{animation:none}
+  .vf-tick{stroke-dashoffset:0}
+}
+/* Mobile number: +971 and the number share one field row; Send code underneath on phones */
+.vf-step div:has(> input#v-phone){display:grid!important;grid-template-columns:auto minmax(0,1fr) auto;gap:8px!important;align-items:center}
+.vf-step div:has(> input#v-phone) > span{justify-content:center;min-width:64px}
+.vf-step div:has(> input#v-email){display:grid!important;grid-template-columns:minmax(0,1fr) auto;gap:8px!important}
+@media (max-width:640px){
+  .vf-step div:has(> input#v-phone){grid-template-columns:auto minmax(0,1fr)}
+  .vf-step div:has(> input#v-phone) > [data-send-code],.vf-step div:has(> input#v-email) > [data-send-code]{grid-column:1/-1}
+  .vf-step div:has(> input#v-email){grid-template-columns:minmax(0,1fr)}
+}
+/* File pickers: a proper button and calm helper text instead of the browser default */
+.vf-step input[type=file]{width:100%;font:inherit;font-size:14px;color:#4E5C5C;padding:6px 0}
+.vf-step input[type=file]::file-selector-button{height:44px;margin-right:12px;padding:0 18px;border-radius:999px;border:1.5px solid #1B2B2C;background:#FFFFFF;color:#1B2B2C;font:inherit;font-weight:700;font-size:15px;cursor:pointer;transition:background-color .15s ease}
+.vf-step input[type=file]::file-selector-button:hover{background:#F8F2E8}
