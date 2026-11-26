@@ -41,9 +41,9 @@ button:not([role=switch]):active,.btn:active,.press:active{transform:scale(.97)}
 .lift:active{transform:scale(.985)}
 
 /* Save (heart) */
-button[aria-label^="Save"] svg{transition:transform 220ms var(--ease-out)}
-button[aria-label^="Save"] path{transition:fill 150ms ease,stroke 150ms ease}
-button[aria-label^="Save"][aria-pressed="true"] svg{transform:scale(1.15)}
+button[data-al^="Save"] svg{transition:transform 220ms var(--ease-out)}
+button[data-al^="Save"] path{transition:fill 150ms ease,stroke 150ms ease}
+button[data-al^="Save"][aria-pressed="true"] svg{transform:scale(1.15)}
 
 /* Homepage intro — first visit in a session only */
 @keyframes fj-rise{from{opacity:0;transform:translateY(14px)}}
@@ -70,7 +70,7 @@ html:not(.seen) body[data-page="Home"] section[aria-labelledby="hero-h"]>div:nth
   .tabbar a[aria-current="page"]{color:#146A6E}
   .tabbar a[aria-current="page"]::before{content:"";position:absolute;top:2px;width:5px;height:5px;background:#D84B33;transform:rotate(45deg)}
   .tabbar .sell{justify-self:center;width:52px;height:52px;min-height:0;border-radius:18px;background:#197E83;color:#FFFFFF}
-  .site-header nav[aria-label="Main"]{display:none!important}
+  .site-header nav[data-al="Main"]{display:none!important}
   body:not([data-page="Listing"]):not([data-page="Cookies"]):not([data-page="Verify"]){padding-bottom:calc(66px + env(safe-area-inset-bottom))}
   body[data-page="Listing"] .tabbar,body[data-page="Cookies"] .tabbar,body[data-page="Verify"] .tabbar{display:none}
   body:not([data-page="Listing"]):not([data-page="Verify"]) #cookie-banner{bottom:calc(74px + env(safe-area-inset-bottom))!important}
@@ -100,7 +100,7 @@ html:not(.seen) body[data-page="Home"] section[aria-labelledby="hero-h"]>div:nth
   #filters.filters,#filters.filters.open{transform:none!important;transition:opacity 200ms ease,visibility 0s!important}
   #filters.filters:not(.open){opacity:0}
   button:active,.btn:active,.press:active,.lift:active{transform:none!important}
-  button[aria-label^="Save"][aria-pressed="true"] svg{transform:none}
+  button[data-al^="Save"][aria-pressed="true"] svg{transform:none}
 }
 
 /* ===== Mobile polish (phones ≤640px) ===== */
@@ -109,24 +109,24 @@ html:not(.seen) body[data-page="Home"] section[aria-labelledby="hero-h"]>div:nth
   /* Header: logo left, inbox + profile right, search full width below */
   .site-header > div{padding:10px 16px 12px!important;gap:10px 12px!important;align-items:center!important}
   .site-header .logo-img{height:34px!important}
-  .site-header nav[aria-label="Main"]{display:flex!important;gap:2px!important;margin-left:auto}
-  .site-header nav[aria-label="Main"] a[href="sell.html"]{display:none!important}
-  .site-header nav[aria-label="Main"] a[aria-label="Your account"]{width:40px!important;height:40px!important}
+  .site-header nav[data-al="Main"]{display:flex!important;gap:2px!important;margin-left:auto}
+  .site-header nav[data-al="Main"] a[href="sell.html"]{display:none!important}
+  .site-header nav[data-al="Main"] a[data-al="Your account"]{width:40px!important;height:40px!important}
   .site-header form[role="search"]{height:46px!important}
   /* Listing grids: two columns like an app */
   main ul[style*="minmax(min(100%,230px)"],main ul[style*="minmax(min(100%,220px)"],main ul[style*="minmax(220px"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:22px 12px!important}
-  main ul[style*="minmax(min(100%,230px)"] li button[aria-label^="Save"],main ul[style*="minmax(min(100%,220px)"] li button[aria-label^="Save"]{width:36px!important;height:36px!important;right:8px!important;top:8px!important}
+  main ul[style*="minmax(min(100%,230px)"] li button[data-al^="Save"],main ul[style*="minmax(min(100%,220px)"] li button[data-al^="Save"]{width:36px!important;height:36px!important;right:8px!important;top:8px!important}
   main ul[style*="minmax(min(100%,230px)"] li>a>span:last-child>span:first-child,main ul[style*="minmax(min(100%,220px)"] li>a>span:last-child>span:first-child{font-size:17px!important}
   /* Popular chips: one scrolling row */
   section[aria-labelledby="hero-h"] div:has(> a[href="search.html"].btn){flex-wrap:nowrap!important;overflow-x:auto;margin-right:-16px;padding-right:16px;scrollbar-width:none}
   section[aria-labelledby="hero-h"] div:has(> a[href="search.html"].btn) a{flex:none;white-space:nowrap}
   /* Dashboard side menu becomes a scrolling tab row */
-  nav[aria-label="Dashboard"]{flex-direction:row!important;max-width:none!important;flex:1 1 100%!important;overflow-x:auto;padding:6px!important;gap:4px!important;scrollbar-width:none}
-  nav[aria-label="Dashboard"] a{flex:none;white-space:nowrap;min-height:40px!important}
+  nav[data-al="Dashboard"]{flex-direction:row!important;max-width:none!important;flex:1 1 100%!important;overflow-x:auto;padding:6px!important;gap:4px!important;scrollbar-width:none}
+  nav[data-al="Dashboard"] a{flex:none;white-space:nowrap;min-height:40px!important}
   /* Shop pages: smaller logo and name */
-  span[role="img"][aria-label$="logo"]{width:96px!important;height:96px!important;border-radius:26px!important;font-size:30px!important;border-width:4px!important}
+  span[role="img"][data-al$="logo"]{width:96px!important;height:96px!important;border-radius:26px!important;font-size:30px!important;border-width:4px!important}
   main section h1[style*="font-size:44px"]{font-size:32px!important}
-  main section:has(span[aria-label$="logo"]){margin-top:-48px!important;gap:16px!important}
+  main section:has(span[data-al$="logo"]){margin-top:-48px!important;gap:16px!important}
   /* Chat: offer buttons stay on one line */
   li button.btn{white-space:nowrap;font-size:14px!important;padding:0 12px!important}
   /* Section headings a touch tighter */
@@ -158,14 +158,14 @@ main li > a.lift > span[style="font-size:14px;color:#4E5C5C"]{white-space:nowrap
 @media (min-width:641px) and (max-width:1260px){
   .site-header > div{align-items:center!important}
   .site-header .logo-img{height:44px!important}
-  .site-header nav[aria-label="Main"]{order:2;margin-left:auto}
+  .site-header nav[data-al="Main"]{order:2;margin-left:auto}
   .site-header form[role="search"]{order:3;flex:1 1 100%!important}
 }
 @media (min-width:641px) and (max-width:820px){
-  .site-header nav[aria-label="Main"] a[href="search.html"]{display:none!important}
+  .site-header nav[data-al="Main"] a[href="search.html"]{display:none!important}
 }
 @media (min-width:641px) and (max-width:720px){
-  .site-header nav[aria-label="Main"] a[href^="storefront.html"]{display:none!important}
+  .site-header nav[data-al="Main"] a[href^="storefront.html"]{display:none!important}
 }
 
 /* ---- Cards: equal heights, bottoms line up, no forced gaps ---- */
@@ -181,8 +181,8 @@ main li a.lift span[style*="font-weight:600;font-size:15px"],.shop-grid .card-ti
   main ul[style*="minmax(min(100%,230px)"]{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:24px 14px!important}
   main ol[style*="minmax(min(100%,280px)"],main ul[style*="minmax(min(100%,300px)"]{grid-template-columns:repeat(3,minmax(0,1fr))!important}
   main ol[style*="minmax(min(100%,280px)"] > li,main ul[style*="minmax(min(100%,300px)"] > li > a{padding:20px!important}
-  ul[aria-label="Seller accounts"]{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important}
-  ul[aria-label="Seller accounts"] article{padding:18px!important;gap:14px!important}
+  ul[data-al="Seller accounts"]{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important}
+  ul[data-al="Seller accounts"] article{padding:18px!important;gap:14px!important}
 }
 @media (max-width:640px){
   .shop-grid,.similar-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:22px 12px!important}
@@ -196,8 +196,8 @@ main li a.lift span[style*="font-weight:600;font-size:15px"],.shop-grid .card-ti
   main ul[style*="minmax(min(100%,240px)"]{grid-template-columns:repeat(4,minmax(0,1fr))!important}
 }
 @media (min-width:641px) and (max-width:1100px){
-  ul[aria-label="Seller accounts"]{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important}
-  ul[aria-label="Seller accounts"] article{padding:18px!important;gap:14px!important}
+  ul[data-al="Seller accounts"]{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important}
+  ul[data-al="Seller accounts"] article{padding:18px!important;gap:14px!important}
 }
 /* FAQ: visible open/close indicator */
 main details > summary{list-style:none}
@@ -208,14 +208,14 @@ main details[open] > summary::after{transform:rotate(45deg)}
 
 /* Shop pages below laptop: About panel spans the width, facts in columns */
 @media (max-width:1023px){
-  aside[aria-label="About the seller"]{max-width:none!important;flex:1 1 100%!important}
-  aside[aria-label="About the seller"] dl{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:14px 18px!important}
+  aside[data-al="About the seller"]{max-width:none!important;flex:1 1 100%!important}
+  aside[data-al="About the seller"] dl{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:14px 18px!important}
 }
 /* Dashboard on phones: one swipeable row of filters, prices on one line */
 @media (max-width:640px){
-  [role="group"][aria-label="Filter by status"]{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;margin-inline:-24px;padding-inline:24px}
-  [role="group"][aria-label="Filter by status"] > *{flex:none}
-  [role="group"][aria-label="Filter by status"]::-webkit-scrollbar{display:none}
+  [role="group"][data-al="Filter by status"]{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;margin-inline:-24px;padding-inline:24px}
+  [role="group"][data-al="Filter by status"] > *{flex:none}
+  [role="group"][data-al="Filter by status"]::-webkit-scrollbar{display:none}
 }
 main td{white-space:nowrap}
 main td:has(> img),main td:first-child{white-space:normal}
@@ -275,8 +275,8 @@ main td:has(> img),main td:first-child{white-space:normal}
 @media (max-width:360px){.site-header .logo-img{height:40px!important}}
 footer img{height:48px!important}
 
-/* Verification: a focused task, so no search bar in the header */
-body[data-page="Verify"] .site-header form[role="search"]{display:none!important}
+/* Header search only where people browse: Home, results, item and shop pages */
+body:not([data-page="Home"]):not([data-page="Search"]):not([data-page="Listing"]):not([data-page="Storefront"]):not([data-page="StorefrontBusiness"]) .site-header form[role="search"]{display:none!important}
 
 /* About page art: keep the collage tidy on phones */
 @media (max-width:640px){.about-art{min-height:280px!important;grid-template-rows:repeat(2,minmax(120px,1fr))!important}}
@@ -288,3 +288,46 @@ body[data-page="Verify"] .site-header form[role="search"]{display:none!important
 @media (min-width:375px) and (max-width:640px){.site-header .logo-img{height:48px!important}}
 @media (min-width:641px) and (max-width:1260px){.site-header .logo-img{height:58px!important}}
 @media (min-width:641px) and (max-width:860px){.site-header .logo-img{height:50px!important}}
+
+/* ===== Language switch ===== */
+.lang-pill{width:40px;height:40px;border-radius:999px;border:1.5px solid #E6DCCB;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;font-size:14px;color:#1B2B2C;flex:none;transition:background-color .15s ease,transform .1s ease}
+.lang-pill[lang="ar"]{font-family:'Baloo Bhaijaan 2',sans-serif;font-size:18px;line-height:1}
+.lang-pill:hover{background:#F8F2E8}.lang-pill:active{transform:scale(.94)}
+.lang-foot{height:44px;padding:0 16px;border-radius:999px;border:1px solid #3C8F93;color:#FFFFFF!important;display:flex;align-items:center;font-size:14px;font-weight:600;text-decoration:none}
+.lang-foot:hover{background:rgba(255,255,255,.08)}
+
+/* ===== Arabic, right to left ===== */
+html[lang="ar"] body,html[lang="ar"] [style*="font-family:Inter"]{font-family:'IBM Plex Sans Arabic',Inter,system-ui,sans-serif!important}
+html[lang="ar"] [style*="Fredoka"],html[lang="ar"] .vf-count{font-family:'Baloo Bhaijaan 2','Fredoka',sans-serif!important;letter-spacing:0!important}
+html[lang="ar"] h1,html[lang="ar"] h2{line-height:1.25!important}
+html[lang="ar"] [style*="text-transform:uppercase"]{letter-spacing:0!important}
+html[lang="ar"] p,html[lang="ar"] li{line-height:1.75}
+[dir="rtl"] .flip-rtl svg{transform:scaleX(-1)}
+[dir="rtl"] .vf-back{margin-left:0;margin-right:-10px}
+[dir="rtl"] .vf-back svg{transform:scaleX(-1)}
+[dir="rtl"] .vf-bar{transform-origin:right center}
+[dir="rtl"] .vf-step input[type=file]::file-selector-button{margin-right:0;margin-left:12px}
+[dir="rtl"] footer a[href^="mailto:"]{padding-left:8px!important;padding-right:0!important}
+/* Emails, phone numbers and codes are typed left to right */
+[dir="rtl"] input[type=email],[dir="rtl"] input[type=tel],[dir="rtl"] [data-otp]{direction:ltr}
+[dir="rtl"] input[type=email]::placeholder,[dir="rtl"] input[type=tel]::placeholder{text-align:right}
+[dir="rtl"] .vf-step div:has(> input#v-phone){direction:ltr}
+@media (max-width:1260px){[dir="rtl"] .site-header nav[data-al="Main"]{margin-left:0!important;margin-right:auto!important}}
+@media (max-width:640px){
+  [dir="rtl"] main ul li button[data-al^="Save"]{right:auto!important;left:8px!important}
+  [dir="rtl"] section[aria-labelledby="hero-h"] div:has(> a[href="search.html"].btn){margin-right:0!important;padding-right:0!important;margin-left:-16px!important;padding-left:16px!important}
+}
+
+/* ===== Header fit with the language button ===== */
+@media (min-width:1261px){.site-header form[role="search"]{flex-basis:280px!important}}
+@media (min-width:641px) and (max-width:1260px){.site-header nav[data-al="Main"] a[href="search.html"]{display:none!important}}
+@media (min-width:641px) and (max-width:920px){.site-header nav[data-al="Main"] a[href^="storefront.html"]{display:none!important}}
+@media (max-width:640px){
+  .lang-pill{width:38px;height:38px;font-size:13px}
+  .site-header nav[data-al="Main"] a[href="messages.html"]{width:40px!important}
+  .site-header .logo-img{height:44px!important}
+}
+@media (min-width:415px) and (max-width:640px){.site-header .logo-img{height:48px!important}}
+@media (max-width:374px){.site-header .logo-img{height:38px!important}}
+@media (max-width:340px){.site-header .logo-img{height:34px!important}}
+section[aria-labelledby="hero-h"] div:has(> a[href="search.html"].btn) > span{white-space:nowrap;flex:none}

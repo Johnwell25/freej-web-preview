@@ -1,4 +1,8 @@
 (function(){
+  window.FJ_AR=document.documentElement.lang==='ar';
+  window.fjT=function(en,ar){return window.FJ_AR?ar:en;};
+})();
+(function(){
   var KEY='freej-consent';
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   function store(v){try{localStorage.setItem(KEY,JSON.stringify(v));}catch(e){}}
@@ -19,7 +23,7 @@
   document.addEventListener('click',function(e){
     var b=e.target.closest('[data-action]'); if(!b) return;
     var a=b.getAttribute('data-action');
-    if(a==='accept'||(a==='hide'&&b.textContent.indexOf('Accept')>-1)){store({analytics:true,prefs:true});hideBanner();}
+    if(a==='accept'||(a==='hide'&&(b.textContent.indexOf('Accept')>-1||b.textContent.indexOf('قبول')>-1))){store({analytics:true,prefs:true});hideBanner();}
     else if(a==='reject'||a==='hide'){store({analytics:false,prefs:false});hideBanner();}
     else if(a==='toggle'){setSwitch(b,b.getAttribute('aria-checked')!=='true');}
     else if(a==='acceptAll'){document.querySelectorAll('[role=switch]').forEach(function(s){setSwitch(s,true);});saveSwitches();}
@@ -29,12 +33,12 @@
   function saveSwitches(){
     var sw=document.querySelectorAll('[role=switch]');
     store({prefs:sw[0]&&sw[0].getAttribute('aria-checked')==='true',analytics:sw[1]&&sw[1].getAttribute('aria-checked')==='true'});
-    var st=document.getElementById('ck-status'); if(st){st.textContent='Your cookie choices are saved.';}
+    var st=document.getElementById('ck-status'); if(st){st.textContent=fjT('Your cookie choices are saved.','تم حفظ اختياراتك لملفات تعريف الارتباط.');}
   }
   if(document.body.dataset.page==='Cookies'){
     var saved=read(); var sw=document.querySelectorAll('[role=switch]');
     if(saved&&sw.length>1){setSwitch(sw[0],!!saved.prefs);setSwitch(sw[1],!!saved.analytics);}
-    document.querySelectorAll('button').forEach(function(b){ if(b.textContent.trim()==='Save my choices') b.addEventListener('click',saveSwitches); });
+    document.querySelectorAll('button').forEach(function(b){ if((b.textContent.trim()==='Save my choices'||b.textContent.trim()==='حفظ اختياراتي')) b.addEventListener('click',saveSwitches); });
   }
 
   /* Filters: bottom sheet on tablets and phones */
@@ -49,7 +53,7 @@
   }
 
   /* Save (heart) buttons */
-  document.querySelectorAll('button[aria-pressed][aria-label^="Save"]').forEach(function(b){
+  document.querySelectorAll('button[aria-pressed][data-al^="Save"]').forEach(function(b){
     b.addEventListener('click',function(){var on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on?'true':'false');var p=b.querySelector('path');if(p){p.setAttribute('fill',on?'#D84B33':'none');p.setAttribute('stroke',on?'#D84B33':'#1B2B2C');}});
   });
 
@@ -87,7 +91,7 @@
 
   function setChrome(){
     var done=i>=total;
-    if(count) count.textContent=done?'All done':'Step '+(i+1)+' of '+total;
+    if(count) count.textContent=done?fjT('All done','اكتمل التوثيق'):fjT('Step '+(i+1)+' of '+total,'الخطوة '+(i+1)+' من '+total);
     if(prog){ prog.setAttribute('aria-valuemax',total); prog.setAttribute('aria-valuenow',Math.min(i+1,total)); }
     if(bar) bar.style.transform='scaleX('+(done?1:(i+1)/total)+')';
     if(back) back.hidden=(i===0||done);
@@ -96,7 +100,7 @@
   function animateIn(el,dir){
     if(!el.animate) return;
     if(reduce){ el.animate([{opacity:0},{opacity:1}],{duration:180,easing:'ease-out'}); return; }
-    el.animate([{opacity:0,transform:'translateX('+(dir*28)+'px)'},{opacity:1,transform:'none'}],{duration:340,easing:'cubic-bezier(.2,.8,.2,1)'});
+    el.animate([{opacity:0,transform:'translateX('+(dir*(window.FJ_AR?-28:28))+'px)'},{opacity:1,transform:'none'}],{duration:340,easing:'cubic-bezier(.2,.8,.2,1)'});
   }
   function go(n,dir,push){
     n=Math.max(0,Math.min(n,steps.length-1)); if(n===i&&push!==false&&dir) return;
@@ -110,7 +114,7 @@
       if(to.getAttribute('data-step')==='5'){ try{localStorage.setItem(VKEY,'1');}catch(e){} to.classList.add('vf-celebrate'); }
     }
     if(from&&from!==to&&!from.hidden&&from.animate&&!reduce){
-      var a=from.animate([{opacity:1,transform:'none'},{opacity:0,transform:'translateX('+(-(dir||1)*20)+'px)'}],{duration:160,easing:'cubic-bezier(.4,0,1,1)'});
+      var a=from.animate([{opacity:1,transform:'none'},{opacity:0,transform:'translateX('+(-(dir||1)*(window.FJ_AR?-20:20))+'px)'}],{duration:160,easing:'cubic-bezier(.4,0,1,1)'});
       a.onfinish=swap;
     } else swap();
     if(push!==false){ try{ history.pushState({vf:i},'', '#step-'+(i+1)); }catch(e){} }
@@ -138,10 +142,10 @@
     field.addEventListener('keydown',function(e){ if(e.key==='Enter'&&valid()){ e.preventDefault(); send.click(); } });
     send.addEventListener('click',function(){
       if(!valid()) return;
-      send.textContent='Code sent'; send.disabled=true;
+      send.textContent=fjT('Code sent','تم إرسال الرمز'); send.disabled=true;
       if(otp&&otp.hidden){ otp.hidden=false; if(otp.animate&&!reduce) otp.animate([{opacity:0,transform:'translateY(-6px)'},{opacity:1,transform:'none'}],{duration:260,easing:'cubic-bezier(.2,.8,.2,1)'}); }
       var first=otp&&otp.querySelector('input'); if(first) first.focus();
-      setTimeout(function(){ send.textContent='Resend code'; send.disabled=!valid(); },4000);
+      setTimeout(function(){ send.textContent=fjT('Resend code','إعادة إرسال الرمز'); send.disabled=!valid(); },4000);
     });
   });
   document.querySelectorAll('[data-otp]').forEach(function(g){
@@ -163,9 +167,9 @@
   document.querySelectorAll('[data-id-method]').forEach(function(b){
     b.addEventListener('click',function(){
       var step=b.closest('section');
-      step.querySelectorAll('[data-id-method]').forEach(function(x){ x.setAttribute('aria-pressed','false'); x.classList.remove('vf-chosen'); x.textContent=x.getAttribute('data-id-method')==='uaepass'?'Continue with UAE PASS':'Take a selfie'; });
+      step.querySelectorAll('[data-id-method]').forEach(function(x){ x.setAttribute('aria-pressed','false'); x.classList.remove('vf-chosen'); x.textContent=x.getAttribute('data-id-method')==='uaepass'?fjT('Continue with UAE PASS','المتابعة عبر UAE PASS'):fjT('Take a selfie','التقط صورة ذاتية'); });
       b.setAttribute('aria-pressed','true'); b.classList.add('vf-chosen');
-      b.textContent=b.getAttribute('data-id-method')==='uaepass'?'UAE PASS approved':'Selfie taken';
+      b.textContent=b.getAttribute('data-id-method')==='uaepass'?fjT('UAE PASS approved','تمت الموافقة عبر UAE PASS'):fjT('Selfie taken','تم التقاط الصورة');
       enable(step,true);
     });
   });
@@ -180,3 +184,6 @@
   steps.forEach(function(s,k){ s.hidden=k!==0; });
   setChrome();
 })();
+
+/* Language switch: remember the visitor's choice */
+document.addEventListener('click',function(e){var a=e.target.closest('[data-lang]');if(!a)return;try{localStorage.setItem('freej-lang',a.getAttribute('data-lang'));}catch(err){}});

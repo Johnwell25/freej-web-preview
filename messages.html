@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Messages — Freej</title>
-<meta name="description" content="Your FreeJ conversations and offers.">
+<title>الرسائل — فريج</title>
+<meta name="description" content="محادثاتك وعروضك على فريج.">
 <meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#197E83">
 <link rel="icon" href="favicon-64.png" type="image/png" sizes="64x64"><link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Freej | فريج">
-<meta property="og:title" content="Messages — Freej">
-<meta property="og:description" content="Your FreeJ conversations and offers.">
+<meta property="og:title" content="الرسائل — فريج">
+<meta property="og:description" content="محادثاتك وعروضك على فريج.">
 <meta property="og:image" content="og.png">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -32,97 +32,104 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 </style>
 
 <link rel="stylesheet" href="styles.css">
+<link rel="alternate" hreflang="ar" href="https://johnwell25.github.io/free-web-preview/messages.html">
+<link rel="alternate" hreflang="en" href="https://johnwell25.github.io/free-web-preview/en/messages.html">
+<link rel="alternate" hreflang="x-default" href="https://johnwell25.github.io/free-web-preview/messages.html">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<meta property="og:locale" content="ar_AE">
+<script>try{if(localStorage.getItem("freej-lang")==="en")location.replace("en/messages.html"+location.search+location.hash)}catch(e){}</script>
 </head>
 <body data-page="Messages">
-<div class="preview-bar" role="note">Design preview: sample listings and people</div>
+<div class="preview-bar" role="note">نسخة تجريبية للتصميم: إعلانات وأشخاص للعرض فقط</div>
 
 
 <div style="width:100%;font-family:Inter,system-ui,sans-serif;color:#1B2B2C;background:#FFFFFF;position:relative">
-<a href="#thread" class="skip">Skip to conversation</a>
+<a href="#thread" class="skip">انتقل إلى المحادثة</a>
 
 
 <header class="site-header" style="width:100%;background:#FFFFFF;border-bottom:1px solid #E6DCCB;font-family:Inter,system-ui,sans-serif;color:#1B2B2C">
 <div style="max-width:1280px;margin:0 auto;padding:14px clamp(16px,3vw,32px);box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px">
-<a href="index.html" aria-label="Freej — home" class="btn" style="display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:#1B2B2C">
+<a href="index.html" data-al="Freej — home" aria-label="فريج — الصفحة الرئيسية" class="btn" style="display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:#1B2B2C">
 <img class="logo-img" src="freej-logo.png" alt="" width="279" height="64" style="display:block;height:64px;width:auto">
 </a>
-<form role="search" action="search.html" class="hdr-search" style="flex:1 1 360px;display:flex;align-items:center;gap:10px;height:50px;padding:0 5px 0 16px;border:1.5px solid #1B2B2C;border-radius:999px;box-sizing:border-box;background:#FFFFFF;max-width:none">
+<form role="search" action="search.html" class="hdr-search" style="flex:1 1 360px;display:flex;align-items:center;gap:10px;height:50px;padding:0 16px 0 5px;border:1.5px solid #1B2B2C;border-radius:999px;box-sizing:border-box;background:#FFFFFF;max-width:none">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4E5C5C" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
-<label for="site-q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Search listings</label>
-<input id="site-q" name="q" type="search" value="" placeholder="Search items near you" style="flex:1;min-width:0;height:44px;border:0;outline:none;font:inherit;font-size:16px;background:transparent;color:#1B2B2C">
-<button type="submit" class="btn" style="height:40px;padding:0 18px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">Search</button>
+<label for="site-q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">ابحث في الإعلانات</label>
+<input id="site-q" name="q" type="search" value="" placeholder="ابحث عن أغراض قريبة منك" style="flex:1;min-width:0;height:44px;border:0;outline:none;font:inherit;font-size:16px;background:transparent;color:#1B2B2C">
+<button type="submit" class="btn" style="height:40px;padding:0 18px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">بحث</button>
 </form>
-<nav aria-label="Main" style="margin-left:auto;display:flex;align-items:center;gap:4px">
-<a href="search.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">Browse</a>
-<a href="storefront.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">Local makers</a>
-<a href="business.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">Local shops</a>
-<a href="messages.html" aria-label="Messages, 2 unread" style="position:relative;width:44px;height:44px;border-radius:999px;display:flex;align-items:center;justify-content:center;color:#1B2B2C">
+<nav data-al="Main" aria-label="القائمة الرئيسية" style="margin-right:auto;display:flex;align-items:center;gap:4px">
+<a href="search.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">تصفّح</a>
+<a href="storefront.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">صنّاع محليون</a>
+<a href="business.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">متاجر محلية</a>
+<a href="en/messages.html" class="lang-pill" data-lang="en" lang="en" hreflang="en" aria-label="English">EN</a>
+<a href="messages.html" data-al="Messages, 2 unread" aria-label="الرسائل، 2 غير مقروءة" style="position:relative;width:44px;height:44px;border-radius:999px;display:flex;align-items:center;justify-content:center;color:#1B2B2C">
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path></svg>
-<span aria-hidden="true" style="position:absolute;top:6px;right:5px;min-width:18px;height:18px;border-radius:999px;background:#197E83;color:#FFFFFF;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">2</span></a>
-<a href="sell.html" class="btn" style="display:flex;align-items:center;gap:6px;height:44px;padding:0 18px;border-radius:999px;background:#1B2B2C;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>Sell</a>
-<a href="dashboard.html" aria-label="Your account" style="width:44px;height:44px;border-radius:999px;background:#D5E8E8;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;font-size:14px;color:#1B2B2C">RJ</a>
+<span aria-hidden="true" style="position:absolute;top:6px;left:5px;min-width:18px;height:18px;border-radius:999px;background:#197E83;color:#FFFFFF;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">2</span></a>
+<a href="sell.html" class="btn" style="display:flex;align-items:center;gap:6px;height:44px;padding:0 18px;border-radius:999px;background:#1B2B2C;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>بيع</a>
+<a href="dashboard.html" data-al="Your account" aria-label="حسابك" style="width:44px;height:44px;border-radius:999px;background:#D5E8E8;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;font-size:14px;color:#1B2B2C">RJ</a>
 </nav>
 </div>
 </header>
 
 
 <main style="max-width:1280px;margin:0 auto;padding:24px clamp(12px,3vw,32px);box-sizing:border-box">
-<h1 class="sr">Messages</h1>
+<h1 class="sr">الرسائل</h1>
 <div style="display:flex;flex-wrap:wrap;border:1px solid #E6DCCB;border-radius:28px;overflow:hidden;min-height:720px">
 
-<nav aria-label="Conversations" class="convos" style="flex:1 1 280px;max-width:340px;border-right:1px solid #E6DCCB;display:flex;flex-direction:column">
+<nav data-al="Conversations" aria-label="المحادثات" class="convos" style="flex:1 1 280px;max-width:340px;border-left:1px solid #E6DCCB;display:flex;flex-direction:column">
 <div style="padding:20px;display:flex;flex-direction:column;gap:14px;border-bottom:1px solid #E6DCCB">
-<span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:26px;letter-spacing:0">Messages</span>
-<div role="group" aria-label="Show" style="display:flex;gap:6px">
-<button type="button" aria-pressed="true" style="height:44px;padding:0 16px;border-radius:999px;border:0;background:#1B2B2C;color:#FFFFFF;font:inherit;font-size:14px;font-weight:700">All</button>
-<button type="button" aria-pressed="false" style="height:44px;padding:0 16px;border-radius:999px;border:1px solid #C9BFAE;background:#FFFFFF;font:inherit;font-size:14px;font-weight:700;color:#1B2B2C">Buying</button>
-<button type="button" aria-pressed="false" style="height:44px;padding:0 16px;border-radius:999px;border:1px solid #C9BFAE;background:#FFFFFF;font:inherit;font-size:14px;font-weight:700;color:#1B2B2C">Selling</button>
+<span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:26px;letter-spacing:0">الرسائل</span>
+<div role="group" data-al="Show" aria-label="عرض" style="display:flex;gap:6px">
+<button type="button" aria-pressed="true" style="height:44px;padding:0 16px;border-radius:999px;border:0;background:#1B2B2C;color:#FFFFFF;font:inherit;font-size:14px;font-weight:700">الكل</button>
+<button type="button" aria-pressed="false" style="height:44px;padding:0 16px;border-radius:999px;border:1px solid #C9BFAE;background:#FFFFFF;font:inherit;font-size:14px;font-weight:700;color:#1B2B2C">شراء</button>
+<button type="button" aria-pressed="false" style="height:44px;padding:0 16px;border-radius:999px;border:1px solid #C9BFAE;background:#FFFFFF;font:inherit;font-size:14px;font-weight:700;color:#1B2B2C">البيع</button>
 </div>
 </div>
 <ul style="list-style:none;margin:0;padding:8px;display:flex;flex-direction:column;gap:2px">
 
 <li><a href="messages.html" aria-current="page" style="display:flex;gap:12px;padding:12px;border-radius:16px;text-decoration:none;color:#1B2B2C;background:#F8F2E8">
-<span role="img" aria-label="Teak armchair" style="width:52px;height:52px;border-radius:12px;background:#EADFCB;flex:none"></span>
+<span role="img" data-al="Teak armchair" aria-label="كرسي من الساج" style="width:52px;height:52px;border-radius:12px;background:#EADFCB;flex:none"></span>
 <span style="display:flex;flex-direction:column;gap:3px;min-width:0;flex:1">
-<span style="display:flex;justify-content:space-between;gap:8px"><span style="font-weight:700;font-size:15px">Layla M.</span><span style="font-size:12px;color:#4E5C5C">2m</span></span>
-<span style="font-size:13px;color:#4E5C5C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Mid-century teak armchair</span>
-<span style="font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Counter-offer: AED 780</span>
+<span style="display:flex;justify-content:space-between;gap:8px"><span style="font-weight:700;font-size:15px">ليلى م.</span><span style="font-size:12px;color:#4E5C5C">2m</span></span>
+<span style="font-size:13px;color:#4E5C5C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">كرسي من خشب الساج بطراز منتصف القرن</span>
+<span style="font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">عرض مقابل: 780 د.إ</span>
 </span>
 </a></li>
 
 <li><a href="messages.html" aria-current="false" style="display:flex;gap:12px;padding:12px;border-radius:16px;text-decoration:none;color:#1B2B2C;background:transparent">
-<span role="img" aria-label="Blue road bike" style="width:52px;height:52px;border-radius:12px;background:#D5E8E8;flex:none"></span>
+<span role="img" data-al="Blue road bike" aria-label="دراجة زرقاء" style="width:52px;height:52px;border-radius:12px;background:#D5E8E8;flex:none"></span>
 <span style="display:flex;flex-direction:column;gap:3px;min-width:0;flex:1">
-<span style="display:flex;justify-content:space-between;gap:8px"><span style="font-weight:700;font-size:15px">Omar K.</span><span style="font-size:12px;color:#4E5C5C">1h</span></span>
-<span style="font-size:13px;color:#4E5C5C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Road bike, 54 cm frame</span>
-<span style="font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Can you send a photo of the gears?</span>
+<span style="display:flex;justify-content:space-between;gap:8px"><span style="font-weight:700;font-size:15px">عمر ك.</span><span style="font-size:12px;color:#4E5C5C">1h</span></span>
+<span style="font-size:13px;color:#4E5C5C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">دراجة طريق، إطار 54 سم</span>
+<span style="font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">هل يمكنك إرسال صورة لناقل الحركة؟</span>
 </span>
 </a></li>
 
 <li><a href="messages.html" aria-current="false" style="display:flex;gap:12px;padding:12px;border-radius:16px;text-decoration:none;color:#1B2B2C;background:transparent">
-<span role="img" aria-label="Wooden play kitchen" style="width:52px;height:52px;border-radius:12px;background:#CFE4E3;flex:none"></span>
+<span role="img" data-al="Wooden play kitchen" aria-label="مطبخ ألعاب خشبي" style="width:52px;height:52px;border-radius:12px;background:#CFE4E3;flex:none"></span>
 <span style="display:flex;flex-direction:column;gap:3px;min-width:0;flex:1">
-<span style="display:flex;justify-content:space-between;gap:8px"><span style="font-weight:700;font-size:15px">Priya S.</span><span style="font-size:12px;color:#4E5C5C">3h</span></span>
-<span style="font-size:13px;color:#4E5C5C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Your listing: wooden play kitchen</span>
-<span style="font-size:14px;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">You: Friday after 6 works</span>
+<span style="display:flex;justify-content:space-between;gap:8px"><span style="font-weight:700;font-size:15px">بريا س.</span><span style="font-size:12px;color:#4E5C5C">3h</span></span>
+<span style="font-size:13px;color:#4E5C5C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">إعلانك: مطبخ ألعاب خشبي</span>
+<span style="font-size:14px;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">أنت: الجمعة بعد الساعة 6 مناسب</span>
 </span>
 </a></li>
 
 <li><a href="messages.html" aria-current="false" style="display:flex;gap:12px;padding:12px;border-radius:16px;text-decoration:none;color:#1B2B2C;background:transparent">
-<span role="img" aria-label="Sadu cushion" style="width:52px;height:52px;border-radius:12px;background:#F1E6D2;flex:none"></span>
+<span role="img" data-al="Sadu cushion" aria-label="وسادة سدو" style="width:52px;height:52px;border-radius:12px;background:#F1E6D2;flex:none"></span>
 <span style="display:flex;flex-direction:column;gap:3px;min-width:0;flex:1">
-<span style="display:flex;justify-content:space-between;gap:8px"><span style="font-weight:700;font-size:15px">Sadu &amp; Thread</span><span style="font-size:12px;color:#4E5C5C">Mon</span></span>
-<span style="font-size:13px;color:#4E5C5C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Hand-woven sadu cushion</span>
-<span style="font-size:14px;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Thank you! Shipping today.</span>
+<span style="display:flex;justify-content:space-between;gap:8px"><span style="font-weight:700;font-size:15px">سدو آند ثريد</span><span style="font-size:12px;color:#4E5C5C">الإثنين</span></span>
+<span style="font-size:13px;color:#4E5C5C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">وسادة سدو منسوجة يدويًا</span>
+<span style="font-size:14px;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">شكرًا لك! سيتم الشحن اليوم.</span>
 </span>
 </a></li>
 
 <li><a href="messages.html" aria-current="false" style="display:flex;gap:12px;padding:12px;border-radius:16px;text-decoration:none;color:#1B2B2C;background:transparent">
-<span role="img" aria-label="Instant film camera" style="width:52px;height:52px;border-radius:12px;background:#E9E1D3;flex:none"></span>
+<span role="img" data-al="Instant film camera" aria-label="كاميرا تصوير فوري" style="width:52px;height:52px;border-radius:12px;background:#E9E1D3;flex:none"></span>
 <span style="display:flex;flex-direction:column;gap:3px;min-width:0;flex:1">
-<span style="display:flex;justify-content:space-between;gap:8px"><span style="font-weight:700;font-size:15px">Ahmed R.</span><span style="font-size:12px;color:#4E5C5C">Sun</span></span>
-<span style="font-size:13px;color:#4E5C5C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Instant film camera</span>
-<span style="font-size:14px;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">You: Is the price negotiable?</span>
+<span style="display:flex;justify-content:space-between;gap:8px"><span style="font-weight:700;font-size:15px">أحمد ر.</span><span style="font-size:12px;color:#4E5C5C">الأحد</span></span>
+<span style="font-size:13px;color:#4E5C5C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">كاميرا تصوير فوري</span>
+<span style="font-size:14px;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">أنت: هل السعر قابل للتفاوض؟</span>
 </span>
 </a></li>
 
@@ -131,64 +138,64 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 
 <section id="thread" aria-labelledby="thread-h" style="flex:999 1 400px;min-width:0;display:flex;flex-direction:column">
 <div style="display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid #E6DCCB">
-<span role="img" aria-label="Profile photo of Layla M." style="width:44px;height:44px;border-radius:999px;background:#CFE4E3;flex:none"></span>
-<span style="display:flex;flex-direction:column;flex:1;min-width:0"><h2 id="thread-h" style="margin:0;font-size:16px;font-weight:700">Layla M. — Teak armchair</h2><span style="font-size:13px;color:#4E5C5C">Replies within an hour</span></span>
-<button type="button" aria-label="Conversation options" style="width:44px;height:44px;border-radius:999px;border:0;background:transparent;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
+<span role="img" data-al="Profile photo of Layla M." aria-label="صورة الملف الشخصي لليلى م." style="width:44px;height:44px;border-radius:999px;background:#CFE4E3;flex:none"></span>
+<span style="display:flex;flex-direction:column;flex:1;min-width:0"><h2 id="thread-h" style="margin:0;font-size:16px;font-weight:700">ليلى م. — كرسي من الساج</h2><span style="font-size:13px;color:#4E5C5C">تردّ خلال ساعة</span></span>
+<button type="button" data-al="Conversation options" aria-label="خيارات المحادثة" style="width:44px;height:44px;border-radius:999px;border:0;background:transparent;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
 </div>
-<ol role="log" aria-live="polite" aria-label="Messages with Layla" style="list-style:none;margin:0;flex:1;padding:24px;display:flex;flex-direction:column;gap:14px;background:#FBF8F2">
-<li style="align-self:center;font-size:12px;font-weight:700;color:#4E5C5C">Today</li>
-<li style="align-self:flex-end;max-width:72%;padding:12px 16px;border-radius:20px 20px 6px 20px;background:#197E83;color:#FFFFFF;font-size:15px;line-height:1.45"><span class="sr">You: </span>Hi Layla! Is the armchair still available?</li>
-<li style="align-self:flex-start;max-width:72%;padding:12px 16px;border-radius:20px 20px 20px 6px;background:#FFFFFF;border:1px solid #E6DCCB;font-size:15px;line-height:1.45"><span class="sr">Layla: </span>Hi! Yes it is. Happy to answer any questions.</li>
+<ol role="log" aria-live="polite" data-al="Messages with Layla" aria-label="الرسائل مع ليلى" style="list-style:none;margin:0;flex:1;padding:24px;display:flex;flex-direction:column;gap:14px;background:#FBF8F2">
+<li style="align-self:center;font-size:12px;font-weight:700;color:#4E5C5C">اليوم</li>
+<li style="align-self:flex-end;max-width:72%;padding:12px 16px;border-radius:20px 20px 20px 6px;background:#197E83;color:#FFFFFF;font-size:15px;line-height:1.45"><span class="sr">أنت: </span>مرحبًا ليلى! هل الكرسي ما زال متوفرًا؟</li>
+<li style="align-self:flex-start;max-width:72%;padding:12px 16px;border-radius:20px 20px 6px 20px;background:#FFFFFF;border:1px solid #E6DCCB;font-size:15px;line-height:1.45"><span class="sr">ليلى: </span>أهلًا! نعم ما زال متوفرًا، ويسعدني الرد على أي سؤال.</li>
 <li style="align-self:flex-end;width:min(100%,300px);display:flex;flex-direction:column;gap:6px;padding:16px;border-radius:20px;background:#FFFFFF;border:1.5px solid #1B2B2C;box-sizing:border-box">
-<span style="font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#4E5C5C">Your offer</span>
-<span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:30px">AED 750</span>
-<span style="font-size:13px;color:#4E5C5C">Listed at AED 850 · Seller countered</span>
+<span style="font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#4E5C5C">عرضك</span>
+<span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:30px">750 د.إ</span>
+<span style="font-size:13px;color:#4E5C5C">السعر المعلن 850 د.إ · قدّم البائع عرضًا مقابلًا</span>
 </li>
 <li style="align-self:flex-start;width:min(100%,300px);display:flex;flex-direction:column;gap:10px;padding:16px;border-radius:20px;background:#FFD4C7;box-sizing:border-box">
-<span style="font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase">Counter-offer from Layla</span>
-<span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:30px">AED 780</span>
+<span style="font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase">عرض مقابل من ليلى</span>
+<span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:30px">780 د.إ</span>
 <span style="display:flex;gap:8px">
-<button type="button" class="btn" style="flex:1;height:48px;border-radius:999px;border:0;background:#1B2B2C;color:#FFFFFF;font:inherit;font-weight:700;font-size:15px">Accept AED 780</button>
-<button type="button" class="btn" style="flex:1;height:48px;border-radius:999px;border:1.5px solid #1B2B2C;background:transparent;color:#1B2B2C;font:inherit;font-weight:700;font-size:15px">Counter</button>
+<button type="button" class="btn" style="flex:1;height:48px;border-radius:999px;border:0;background:#1B2B2C;color:#FFFFFF;font:inherit;font-weight:700;font-size:15px">قبول 780 د.إ</button>
+<button type="button" class="btn" style="flex:1;height:48px;border-radius:999px;border:1.5px solid #1B2B2C;background:transparent;color:#1B2B2C;font:inherit;font-weight:700;font-size:15px">عرض مقابل</button>
 </span>
 </li>
-<li style="align-self:flex-start;max-width:72%;padding:12px 16px;border-radius:20px 20px 20px 6px;background:#FFFFFF;border:1px solid #E6DCCB;font-size:15px;line-height:1.45"><span class="sr">Layla: </span>I can do 780 — it’s solid teak. Saturday morning works for collection.</li>
+<li style="align-self:flex-start;max-width:72%;padding:12px 16px;border-radius:20px 20px 6px 20px;background:#FFFFFF;border:1px solid #E6DCCB;font-size:15px;line-height:1.45"><span class="sr">ليلى: </span>أستطيع بـ780 — إنه من خشب الساج المصمت. صباح السبت مناسب للاستلام.</li>
 </ol>
 <form style="display:flex;align-items:center;gap:8px;padding:12px 14px;border-top:1px solid #E6DCCB">
-<button type="button" aria-label="Attach a photo" style="flex:none;width:48px;height:48px;border-radius:999px;border:1px solid #C9BFAE;background:#FFFFFF;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B2B2C" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="m21 17-5-5-9 8"></path></svg></button>
-<label for="reply" class="sr">Write a message to Layla</label>
-<input id="reply" placeholder="Write a message…" style="flex:1;min-width:0;height:48px;padding:0 16px;border-radius:999px;border:1px solid #C9BFAE;font:inherit;font-size:16px">
-<button type="submit" aria-label="Send message" class="btn" style="flex:none;width:48px;height:48px;border-radius:999px;border:0;background:#197E83;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><path d="M4 12 20 4l-6 16-3-7z"></path></svg></button>
+<button type="button" data-al="Attach a photo" aria-label="إرفاق صورة" style="flex:none;width:48px;height:48px;border-radius:999px;border:1px solid #C9BFAE;background:#FFFFFF;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B2B2C" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="m21 17-5-5-9 8"></path></svg></button>
+<label for="reply" class="sr">اكتب رسالة إلى ليلى</label>
+<input id="reply" placeholder="اكتب رسالة…" style="flex:1;min-width:0;height:48px;padding:0 16px;border-radius:999px;border:1px solid #C9BFAE;font:inherit;font-size:16px">
+<button type="submit" data-al="Send message" aria-label="إرسال الرسالة" class="btn flip-rtl" style="flex:none;width:48px;height:48px;border-radius:999px;border:0;background:#197E83;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><path d="M4 12 20 4l-6 16-3-7z"></path></svg></button>
 </form>
 </section>
 
-<aside aria-label="Deal details" class="deal" style="flex:1 1 260px;max-width:300px;border-left:1px solid #E6DCCB;padding:20px;box-sizing:border-box;display:flex;flex-direction:column;gap:18px">
+<aside data-al="Deal details" aria-label="تفاصيل الصفقة" class="deal" style="flex:1 1 260px;max-width:300px;border-right:1px solid #E6DCCB;padding:20px;box-sizing:border-box;display:flex;flex-direction:column;gap:18px">
 <a href="listing.html" style="display:flex;flex-direction:column;gap:8px;text-decoration:none;color:#1B2B2C">
-<span role="img" aria-label="Teak armchair with a woven cane seat" style="aspect-ratio:4/3;border-radius:18px;background:#EADFCB;display:block"></span>
-<span style="font-weight:700;font-size:16px">Mid-century teak armchair</span>
-<span style="font-size:14px;color:#4E5C5C">Listed AED 850 · Al Barsha</span>
+<span role="img" data-al="Teak armchair with a woven cane seat" aria-label="كرسي من الساج بمقعد من الخيزران المنسوج" style="aspect-ratio:4/3;border-radius:18px;background:#EADFCB;display:block"></span>
+<span style="font-weight:700;font-size:16px">كرسي من خشب الساج بطراز منتصف القرن</span>
+<span style="font-size:14px;color:#4E5C5C">السعر المعلن 850 د.إ · البرشاء</span>
 </a>
 <fieldset style="border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:8px">
-<legend style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#4E5C5C;margin-bottom:8px">Handover</legend>
-<label style="display:flex;align-items:center;gap:10px;min-height:48px;padding:0 14px;border-radius:14px;border:1.5px solid #1B2B2C;font-size:14px;font-weight:600"><input type="radio" name="handover" checked style="width:18px;height:18px;accent-color:#146A6E"> Collect from seller</label>
-<label style="display:flex;align-items:center;gap:10px;min-height:48px;padding:0 14px;border-radius:14px;border:1px solid #C9BFAE;font-size:14px;font-weight:600"><input type="radio" name="handover" style="width:18px;height:18px;accent-color:#146A6E"> Meet somewhere public</label>
-<label style="display:flex;align-items:center;gap:10px;min-height:48px;padding:0 14px;border-radius:14px;border:1px solid #C9BFAE;font-size:14px;font-weight:600"><input type="radio" name="handover" style="width:18px;height:18px;accent-color:#146A6E"> Seller delivers</label>
+<legend style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#4E5C5C;margin-bottom:8px">طريقة التسليم</legend>
+<label style="display:flex;align-items:center;gap:10px;min-height:48px;padding:0 14px;border-radius:14px;border:1.5px solid #1B2B2C;font-size:14px;font-weight:600"><input type="radio" name="handover" checked style="width:18px;height:18px;accent-color:#146A6E"> الاستلام من البائع</label>
+<label style="display:flex;align-items:center;gap:10px;min-height:48px;padding:0 14px;border-radius:14px;border:1px solid #C9BFAE;font-size:14px;font-weight:600"><input type="radio" name="handover" style="width:18px;height:18px;accent-color:#146A6E"> اللقاء في مكان عام</label>
+<label style="display:flex;align-items:center;gap:10px;min-height:48px;padding:0 14px;border-radius:14px;border:1px solid #C9BFAE;font-size:14px;font-weight:600"><input type="radio" name="handover" style="width:18px;height:18px;accent-color:#146A6E"> توصيل من البائع</label>
 </fieldset>
-<p style="margin:0;padding:14px;border-radius:16px;background:#F8F2E8;font-size:13px;line-height:1.5;color:#2E3D3D"><strong style="color:#1B2B2C">Stay safe:</strong> meet in daylight, check the item before paying, and keep chats on Freej.</p>
-<button type="button" style="height:44px;border:0;background:transparent;font:inherit;font-size:14px;font-weight:700;color:#4E5C5C;text-align:left;padding:0">Report or block Layla</button>
+<p style="margin:0;padding:14px;border-radius:16px;background:#F8F2E8;font-size:13px;line-height:1.5;color:#2E3D3D"><strong style="color:#1B2B2C">للحفاظ على سلامتك:</strong> التقِ في وضح النهار، وافحص الغرض قبل الدفع، وأبقِ المحادثات على فريج.</p>
+<button type="button" style="height:44px;border:0;background:transparent;font:inherit;font-size:14px;font-weight:700;color:#4E5C5C;text-align:right;padding:0">الإبلاغ عن ليلى أو حظرها</button>
 </aside>
 </div>
 </main>
 </div>
 
-<nav class="tabbar" aria-label="App"><a class="press" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z"></path></svg>Home</a><a class="press" href="search.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-3.5-3.5"></path></svg>Search</a><a class="sell press" href="sell.html" aria-label="Sell an item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></a><a class="press" href="messages.html" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path></svg>Inbox</a><a class="press" href="dashboard.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>Me</a></nav>
-<section role="region" id="cookie-banner" hidden aria-labelledby="cc-h" style="position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:760px;margin:0 auto;padding:22px;border-radius:24px;background:#FFFFFF;border:1.5px solid #1B2B2C;box-shadow:0 18px 48px rgba(20,22,26,.18);display:flex;flex-direction:column;gap:14px;box-sizing:border-box">
-<h2 id="cc-h" style="margin:0;font-size:18px;font-weight:700">Cookies on Freej</h2>
-<p style="margin:0;font-size:15px;line-height:1.55;color:#2E3D3D">We use essential cookies to keep you signed in and the site secure. With your permission we’d also use analytics cookies to see which features help. <a href="privacy.html">Read our Privacy Policy</a>.</p>
+<nav class="tabbar" data-al="App" aria-label="التطبيق"><a class="press" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z"></path></svg>الرئيسية</a><a class="press" href="search.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-3.5-3.5"></path></svg>بحث</a><a class="sell press" href="sell.html" data-al="Sell an item" aria-label="أضف إعلانًا"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></a><a class="press" href="messages.html" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path></svg>الوارد</a><a class="press" href="dashboard.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>حسابي</a></nav>
+<section role="region" id="cookie-banner" hidden aria-labelledby="cc-h" style="position:fixed;right:16px;left:16px;bottom:16px;z-index:50;max-width:760px;margin:0 auto;padding:22px;border-radius:24px;background:#FFFFFF;border:1.5px solid #1B2B2C;box-shadow:0 18px 48px rgba(20,22,26,.18);display:flex;flex-direction:column;gap:14px;box-sizing:border-box">
+<h2 id="cc-h" style="margin:0;font-size:18px;font-weight:700">ملفات تعريف الارتباط على فريج</h2>
+<p style="margin:0;font-size:15px;line-height:1.55;color:#2E3D3D">نستخدم ملفات تعريف الارتباط الضرورية لإبقائك مسجّلًا وللحفاظ على أمان الموقع. وبموافقتك، نستخدم أيضًا ملفات التحليلات لنعرف أي الميزات تفيدك. <a href="privacy.html">اقرأ سياسة الخصوصية</a>.</p>
 <div style="display:flex;flex-wrap:wrap;gap:10px">
-<button type="button" data-action="accept" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">Accept all</button>
-<button type="button" data-action="reject" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">Essential only</button>
-<a href="cookies.html" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:1.5px solid #1B2B2C;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:15px;font-weight:700">Manage choices</a>
+<button type="button" data-action="accept" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">قبول الكل</button>
+<button type="button" data-action="reject" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">الضرورية فقط</button>
+<a href="cookies.html" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:1.5px solid #1B2B2C;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:15px;font-weight:700">إدارة الاختيارات</a>
 </div>
 </section>
 <script src="site.js" defer></script>
