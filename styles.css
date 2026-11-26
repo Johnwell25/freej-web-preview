@@ -267,3 +267,24 @@ main td:has(> img),main td:first-child{white-space:normal}
 .vf-step input[type=file]{width:100%;font:inherit;font-size:14px;color:#4E5C5C;padding:6px 0}
 .vf-step input[type=file]::file-selector-button{height:44px;margin-right:12px;padding:0 18px;border-radius:999px;border:1.5px solid #1B2B2C;background:#FFFFFF;color:#1B2B2C;font:inherit;font-weight:700;font-size:15px;cursor:pointer;transition:background-color .15s ease}
 .vf-step input[type=file]::file-selector-button:hover{background:#F8F2E8}
+
+/* ===== Bigger logo everywhere (header stays on one line) ===== */
+.site-header .logo-img{height:64px!important}
+@media (min-width:641px) and (max-width:1260px){.site-header .logo-img{height:54px!important}}
+@media (max-width:640px){.site-header .logo-img{height:44px!important}}
+@media (max-width:360px){.site-header .logo-img{height:40px!important}}
+footer img{height:48px!important}
+
+/* Verification: a focused task, so no search bar in the header */
+body[data-page="Verify"] .site-header form[role="search"]{display:none!important}
+
+/* About page art: keep the collage tidy on phones */
+@media (max-width:640px){.about-art{min-height:280px!important;grid-template-rows:repeat(2,minmax(120px,1fr))!important}}
+/* Footer on phones: brand on top, link groups in two columns */
+@media (max-width:640px){
+  footer > div > div:first-child{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px 16px!important}
+  footer > div > div:first-child > div:first-child{grid-column:1/-1}
+}
+@media (min-width:375px) and (max-width:640px){.site-header .logo-img{height:48px!important}}
+@media (min-width:641px) and (max-width:1260px){.site-header .logo-img{height:58px!important}}
+@media (min-width:641px) and (max-width:860px){.site-header .logo-img{height:50px!important}}
