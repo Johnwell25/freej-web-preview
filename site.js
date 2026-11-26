@@ -69,8 +69,8 @@
 
   /* Message buttons: unverified buyers go through verification first */
   document.querySelectorAll('[data-needs-verify]').forEach(function(a){
-    if(isVerified()){ a.setAttribute('href','messages.html'); var n=document.querySelector('[data-verify-note]'); if(n) n.hidden=true; }
-    else { a.setAttribute('href','verify.html?for=buyer'); }
+    if(isVerified()){ a.setAttribute('href',window.FJ_AR?'messages.html':'messages-en.html'); var n=document.querySelector('[data-verify-note]'); if(n) n.hidden=true; }
+    else { a.setAttribute('href',(window.FJ_AR?'verify.html':'verify-en.html')+'?for=buyer'); }
   });
 
   if(document.body.dataset.page!=='Verify') return;

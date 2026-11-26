@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Seller dashboard — Freej</title>
-<meta name="description" content="Manage your Freej listings, offers and conversations.">
+<title>لوحة البائع — فريج</title>
+<meta name="description" content="أدِر إعلاناتك وعروضك ومحادثاتك على فريج.">
 <meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#197E83">
-<link rel="icon" href="../favicon-64.png" type="image/png" sizes="64x64"><link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
-<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" href="favicon-64.png" type="image/png" sizes="64x64"><link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Freej | فريج">
-<meta property="og:title" content="Seller dashboard — Freej">
-<meta property="og:description" content="Manage your Freej listings, offers and conversations.">
+<meta property="og:title" content="لوحة البائع — فريج">
+<meta property="og:description" content="أدِر إعلاناتك وعروضك ومحادثاتك على فريج.">
 <meta property="og:image" content="og.png">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -32,163 +32,165 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 <link rel="alternate" hreflang="ar" href="https://johnwell25.github.io/free-web-preview/dashboard.html">
-<link rel="alternate" hreflang="en" href="https://johnwell25.github.io/free-web-preview/en/dashboard.html">
+<link rel="alternate" hreflang="en" href="https://johnwell25.github.io/free-web-preview/dashboard-en.html">
 <link rel="alternate" hreflang="x-default" href="https://johnwell25.github.io/free-web-preview/dashboard.html">
-<meta property="og:locale" content="en_AE">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<meta property="og:locale" content="ar_AE">
+<script>try{if(localStorage.getItem("freej-lang")==="en")location.replace("dashboard-en.html"+location.search+location.hash)}catch(e){}</script>
 </head>
 <body data-page="Dashboard">
-<div class="preview-bar" role="note">Design preview: sample listings and people</div>
+<div class="preview-bar" role="note">نسخة تجريبية للتصميم: إعلانات وأشخاص للعرض فقط</div>
 
 
 <div style="width:100%;position:relative;font-family:Inter,system-ui,sans-serif;color:#1B2B2C;background:#F8F2E8">
 
-<a href="#main" class="skip">Skip to dashboard</a>
+<a href="#main" class="skip">انتقل إلى اللوحة</a>
 
 
 <header class="site-header" style="width:100%;background:#FFFFFF;border-bottom:1px solid #E6DCCB;font-family:Inter,system-ui,sans-serif;color:#1B2B2C">
 <div style="max-width:1280px;margin:0 auto;padding:14px clamp(16px,3vw,32px);box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px">
-<a href="index.html" data-al="Freej — home" aria-label="Freej — home" class="btn" style="display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:#1B2B2C">
-<img class="logo-img" src="../freej-logo.png" alt="" width="279" height="64" style="display:block;height:64px;width:auto">
+<a href="index.html" data-al="Freej — home" aria-label="فريج — الصفحة الرئيسية" class="btn" style="display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:#1B2B2C">
+<img class="logo-img" src="freej-logo.png" alt="" width="279" height="64" style="display:block;height:64px;width:auto">
 </a>
-<form role="search" action="search.html" class="hdr-search" style="flex:1 1 360px;display:flex;align-items:center;gap:10px;height:50px;padding:0 5px 0 16px;border:1.5px solid #1B2B2C;border-radius:999px;box-sizing:border-box;background:#FFFFFF;max-width:none">
+<form role="search" action="search.html" class="hdr-search" style="flex:1 1 360px;display:flex;align-items:center;gap:10px;height:50px;padding:0 16px 0 5px;border:1.5px solid #1B2B2C;border-radius:999px;box-sizing:border-box;background:#FFFFFF;max-width:none">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4E5C5C" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
-<label for="site-q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Search listings</label>
-<input id="site-q" name="q" type="search" value="" placeholder="Search items near you" style="flex:1;min-width:0;height:44px;border:0;outline:none;font:inherit;font-size:16px;background:transparent;color:#1B2B2C">
-<button type="submit" class="btn" style="height:40px;padding:0 18px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">Search</button>
+<label for="site-q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">ابحث في الإعلانات</label>
+<input id="site-q" name="q" type="search" value="" placeholder="ابحث عن أغراض قريبة منك" style="flex:1;min-width:0;height:44px;border:0;outline:none;font:inherit;font-size:16px;background:transparent;color:#1B2B2C">
+<button type="submit" class="btn" style="height:40px;padding:0 18px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">بحث</button>
 </form>
-<nav data-al="Main" aria-label="Main" style="margin-left:auto;display:flex;align-items:center;gap:4px">
-<a href="search.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">Browse</a>
-<a href="storefront.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">Local makers</a>
-<a href="business.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">Local shops</a>
-<a href="../dashboard.html" class="lang-pill" data-lang="ar" lang="ar" hreflang="ar" aria-label="العربية">ع</a>
-<a href="messages.html" data-al="Messages, 2 unread" aria-label="Messages, 2 unread" style="position:relative;width:44px;height:44px;border-radius:999px;display:flex;align-items:center;justify-content:center;color:#1B2B2C">
+<nav data-al="Main" aria-label="القائمة الرئيسية" style="margin-right:auto;display:flex;align-items:center;gap:4px">
+<a href="search.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">تصفّح</a>
+<a href="storefront.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">صنّاع محليون</a>
+<a href="business.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">متاجر محلية</a>
+<a href="dashboard-en.html" class="lang-pill" data-lang="en" lang="en" hreflang="en" aria-label="English">EN</a>
+<a href="messages.html" data-al="Messages, 2 unread" aria-label="الرسائل، 2 غير مقروءة" style="position:relative;width:44px;height:44px;border-radius:999px;display:flex;align-items:center;justify-content:center;color:#1B2B2C">
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path></svg>
-<span aria-hidden="true" style="position:absolute;top:6px;right:5px;min-width:18px;height:18px;border-radius:999px;background:#197E83;color:#FFFFFF;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">2</span></a>
-<a href="sell.html" class="btn" style="display:flex;align-items:center;gap:6px;height:44px;padding:0 18px;border-radius:999px;background:#1B2B2C;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>Sell</a>
-<a href="dashboard.html" data-al="Your account" aria-label="Your account" style="width:44px;height:44px;border-radius:999px;background:#D5E8E8;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;font-size:14px;color:#1B2B2C">RJ</a>
+<span aria-hidden="true" style="position:absolute;top:6px;left:5px;min-width:18px;height:18px;border-radius:999px;background:#197E83;color:#FFFFFF;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">2</span></a>
+<a href="sell.html" class="btn" style="display:flex;align-items:center;gap:6px;height:44px;padding:0 18px;border-radius:999px;background:#1B2B2C;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>بيع</a>
+<a href="dashboard.html" data-al="Your account" aria-label="حسابك" style="width:44px;height:44px;border-radius:999px;background:#D5E8E8;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;font-size:14px;color:#1B2B2C">RJ</a>
 </nav>
 </div>
 </header>
 
 
 <div style="max-width:1280px;margin:0 auto;padding:28px clamp(16px,3vw,32px) 64px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start">
-<nav data-al="Dashboard" aria-label="Dashboard" style="flex:1 1 220px;max-width:240px;display:flex;flex-direction:column;gap:4px;padding:12px;border-radius:22px;background:#FFFFFF">
-<a href="dashboard.html" aria-current="page" style="display:flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;border-radius:12px;background:#1B2B2C;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:15px">Overview</a>
-<a href="dashboard.html" style="display:flex;align-items:center;min-height:44px;padding:0 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px">My listings</a>
-<a href="messages.html" style="display:flex;align-items:center;justify-content:space-between;min-height:44px;padding:0 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px">Messages <span style="min-width:22px;height:22px;border-radius:999px;background:#197E83;color:#FFFFFF;font-size:12px;display:flex;align-items:center;justify-content:center">2</span></a>
-<a href="storefront.html" style="display:flex;align-items:center;min-height:44px;padding:0 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px">My storefront</a>
-<a href="dashboard.html" style="display:flex;align-items:center;min-height:44px;padding:0 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px">Saved items</a>
-<a href="dashboard.html" style="display:flex;align-items:center;min-height:44px;padding:0 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px">Account settings</a>
+<nav data-al="Dashboard" aria-label="لوحة التحكم" style="flex:1 1 220px;max-width:240px;display:flex;flex-direction:column;gap:4px;padding:12px;border-radius:22px;background:#FFFFFF">
+<a href="dashboard.html" aria-current="page" style="display:flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;border-radius:12px;background:#1B2B2C;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:15px">نظرة عامة</a>
+<a href="dashboard.html" style="display:flex;align-items:center;min-height:44px;padding:0 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px">إعلاناتي</a>
+<a href="messages.html" style="display:flex;align-items:center;justify-content:space-between;min-height:44px;padding:0 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px">الرسائل <span style="min-width:22px;height:22px;border-radius:999px;background:#197E83;color:#FFFFFF;font-size:12px;display:flex;align-items:center;justify-content:center">2</span></a>
+<a href="storefront.html" style="display:flex;align-items:center;min-height:44px;padding:0 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px">متجري</a>
+<a href="dashboard.html" style="display:flex;align-items:center;min-height:44px;padding:0 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px">المحفوظات</a>
+<a href="dashboard.html" style="display:flex;align-items:center;min-height:44px;padding:0 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px">إعدادات الحساب</a>
 </nav>
 
 <main id="main" style="flex:999 1 640px;min-width:0;display:flex;flex-direction:column;gap:24px">
 <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px">
 <div style="display:flex;flex-direction:column;gap:4px">
-<h1 style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:40px;letter-spacing:-0.01em">Welcome back, Johnny</h1>
-<p style="margin:0;font-size:15px;color:#4E5C5C">Here’s what’s happening with your listings.</p>
+<h1 style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:40px;letter-spacing:-0.01em">مرحبًا بعودتك، جوني</h1>
+<p style="margin:0;font-size:15px;color:#4E5C5C">إليك آخر المستجدات على إعلاناتك.</p>
 </div>
-<a href="dashboard.html" class="btn" style="display:flex;align-items:center;gap:8px;height:52px;padding:0 24px;border-radius:999px;background:#197E83;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>New listing</a>
+<a href="dashboard.html" class="btn" style="display:flex;align-items:center;gap:8px;height:52px;padding:0 24px;border-radius:999px;background:#197E83;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>إعلان جديد</a>
 </div>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px">
-<div style="padding:20px;border-radius:20px;background:#FFFFFF;display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;color:#4E5C5C">Active listings</span><span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:36px">3</span></div>
-<div style="padding:20px;border-radius:20px;background:#FFFFFF;display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;color:#4E5C5C">Unread messages</span><span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:36px;color:#146A6E">2</span></div>
-<div style="padding:20px;border-radius:20px;background:#FFFFFF;display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;color:#4E5C5C">Reserved</span><span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:36px">1</span></div>
-<div style="padding:20px;border-radius:20px;background:#FFFFFF;display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;color:#4E5C5C">Sold</span><span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:36px">1</span></div>
+<div style="padding:20px;border-radius:20px;background:#FFFFFF;display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;color:#4E5C5C">الإعلانات النشطة</span><span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:36px">3</span></div>
+<div style="padding:20px;border-radius:20px;background:#FFFFFF;display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;color:#4E5C5C">رسائل غير مقروءة</span><span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:36px;color:#146A6E">2</span></div>
+<div style="padding:20px;border-radius:20px;background:#FFFFFF;display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;color:#4E5C5C">محجوز</span><span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:36px">1</span></div>
+<div style="padding:20px;border-radius:20px;background:#FFFFFF;display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;color:#4E5C5C">مُباع</span><span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:36px">1</span></div>
 </div>
 
 <section aria-labelledby="acct-h" style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;padding:24px;border-radius:24px;background:#FFFFFF;border:1px solid #E6DCCB">
 <div style="display:flex;flex-direction:column;gap:10px;flex:1 1 320px;min-width:0">
-<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><h2 id="acct-h" style="margin:0;font-size:17px;font-weight:700">Neighbour account</h2><span style="display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:999px;background:#D3EAEA;color:#146A6E;font-size:12px;font-weight:700"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#146A6E" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5 9-10"></path></svg>Verified</span></div>
-<p style="margin:0;font-size:15px;color:#2E3D3D"><strong>4 of 10</strong> free listings in use</p>
-<div role="progressbar" data-al="Free listings used" aria-label="Free listings used" aria-valuemin="0" aria-valuemax="10" aria-valuenow="4" style="height:10px;border-radius:999px;background:#F8F2E8;overflow:hidden"><span style="display:block;width:40%;height:100%;border-radius:999px;background:#197E83"></span></div>
-<p style="margin:0;font-size:13px;color:#4E5C5C">Email, mobile and Emirates ID confirmed. To list more than 10 items, register as a small business.</p>
+<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><h2 id="acct-h" style="margin:0;font-size:17px;font-weight:700">حساب جار</h2><span style="display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:999px;background:#D3EAEA;color:#146A6E;font-size:12px;font-weight:700"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#146A6E" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5 9-10"></path></svg>موثّق</span></div>
+<p style="margin:0;font-size:15px;color:#2E3D3D"><strong>4 من 10</strong> إعلانات مجانية مستخدمة</p>
+<div role="progressbar" data-al="Free listings used" aria-label="الإعلانات المجانية المستخدمة" aria-valuemin="0" aria-valuemax="10" aria-valuenow="4" style="height:10px;border-radius:999px;background:#F8F2E8;overflow:hidden"><span style="display:block;width:40%;height:100%;border-radius:999px;background:#197E83"></span></div>
+<p style="margin:0;font-size:13px;color:#4E5C5C">تم تأكيد البريد الإلكتروني ورقم الهاتف والهوية الإماراتية. لعرض أكثر من 10 أغراض، سجّل كنشاط تجاري صغير.</p>
 </div>
-<a href="sell.html" class="btn" style="display:flex;align-items:center;height:48px;padding:0 20px;border-radius:999px;border:1.5px solid #1B2B2C;color:#1B2B2C;text-decoration:none;font-weight:700;font-size:15px">Switch to a business account</a>
+<a href="sell.html" class="btn" style="display:flex;align-items:center;height:48px;padding:0 20px;border-radius:999px;border:1.5px solid #1B2B2C;color:#1B2B2C;text-decoration:none;font-weight:700;font-size:15px">التحويل إلى حساب تجاري</a>
 </section>
 
 <section aria-labelledby="ml" style="padding:24px;border-radius:24px;background:#FFFFFF;display:flex;flex-direction:column;gap:16px">
 <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px">
-<h2 id="ml" style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:24px;letter-spacing:0">My listings</h2>
-<div role="group" data-al="Filter by status" aria-label="Filter by status" style="display:flex;gap:6px;flex-wrap:wrap">
-<button type="button" aria-pressed="true" style="height:44px;padding:0 14px;border-radius:999px;border:0;background:#1B2B2C;color:#FFFFFF;font:inherit;font-size:13px;font-weight:600">All</button>
-<button type="button" aria-pressed="false" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">Active</button>
-<button type="button" aria-pressed="false" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">Reserved</button>
-<button type="button" aria-pressed="false" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">Sold</button>
-<button type="button" aria-pressed="false" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">Drafts</button>
+<h2 id="ml" style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:24px;letter-spacing:0">إعلاناتي</h2>
+<div role="group" data-al="Filter by status" aria-label="تصفية حسب الحالة" style="display:flex;gap:6px;flex-wrap:wrap">
+<button type="button" aria-pressed="true" style="height:44px;padding:0 14px;border-radius:999px;border:0;background:#1B2B2C;color:#FFFFFF;font:inherit;font-size:13px;font-weight:600">الكل</button>
+<button type="button" aria-pressed="false" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">نشط</button>
+<button type="button" aria-pressed="false" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">محجوز</button>
+<button type="button" aria-pressed="false" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">مُباع</button>
+<button type="button" aria-pressed="false" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">المسودات</button>
 </div>
 </div>
 <div style="overflow-x:auto">
 <table style="width:100%;min-width:680px;border-collapse:collapse;font-size:14px">
-<thead><tr style="text-align:left;color:#4E5C5C;font-size:13px">
-<th scope="col" style="padding:10px 12px;font-weight:600">Item</th>
-<th scope="col" style="padding:10px 12px;font-weight:600">Price</th>
-<th scope="col" style="padding:10px 12px;font-weight:600">Status</th>
-<th scope="col" style="padding:10px 12px;font-weight:600">Chats</th>
-<th scope="col" style="padding:10px 12px;font-weight:600">Listed</th>
-<th scope="col" style="padding:10px 12px;font-weight:600"><span class="sr">Actions</span></th>
+<thead><tr style="text-align:right;color:#4E5C5C;font-size:13px">
+<th scope="col" style="padding:10px 12px;font-weight:600">الغرض</th>
+<th scope="col" style="padding:10px 12px;font-weight:600">السعر</th>
+<th scope="col" style="padding:10px 12px;font-weight:600">الحالة</th>
+<th scope="col" style="padding:10px 12px;font-weight:600">المحادثات</th>
+<th scope="col" style="padding:10px 12px;font-weight:600">تاريخ النشر</th>
+<th scope="col" style="padding:10px 12px;font-weight:600"><span class="sr">الإجراءات</span></th>
 </tr></thead>
 <tbody>
 
 <tr style="border-top:1px solid #E6DCCB">
-<td style="padding:12px"><span style="display:flex;align-items:center;gap:12px"><span role="img" data-al="Wooden play kitchen" aria-label="Wooden play kitchen" style="width:48px;height:48px;border-radius:12px;background:#CFE4E3;flex:none"></span><span style="font-weight:600">Wooden play kitchen</span></span></td>
-<td style="padding:12px;font-weight:700">AED 250</td>
-<td style="padding:12px"><span style="padding:5px 10px;border-radius:999px;background:#FFF1D6;color:#8A4B00;font-size:12px;font-weight:700">Reserved</span></td>
+<td style="padding:12px"><span style="display:flex;align-items:center;gap:12px"><span role="img" data-al="Wooden play kitchen" aria-label="مطبخ ألعاب خشبي" style="width:48px;height:48px;border-radius:12px;background:#CFE4E3;flex:none"></span><span style="font-weight:600">مطبخ ألعاب خشبي</span></span></td>
+<td style="padding:12px;font-weight:700">250 د.إ</td>
+<td style="padding:12px"><span style="padding:5px 10px;border-radius:999px;background:#FFF1D6;color:#8A4B00;font-size:12px;font-weight:700">محجوز</span></td>
 <td style="padding:12px">3</td>
-<td style="padding:12px;color:#4E5C5C">4 Nov</td>
-<td style="padding:12px;text-align:right"><span style="display:inline-flex;gap:6px">
-<button type="button" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">Edit</button>
-<button type="button" data-al="More actions for Wooden play kitchen" aria-label="More actions for Wooden play kitchen" style="width:44px;height:44px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
+<td style="padding:12px;color:#4E5C5C">4 نوفمبر</td>
+<td style="padding:12px;text-align:left"><span style="display:inline-flex;gap:6px">
+<button type="button" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">تعديل</button>
+<button type="button" data-al="More actions for Wooden play kitchen" aria-label="إجراءات أخرى لمطبخ ألعاب خشبي" style="width:44px;height:44px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
 </span></td>
 </tr>
 
 <tr style="border-top:1px solid #E6DCCB">
-<td style="padding:12px"><span style="display:flex;align-items:center;gap:12px"><span role="img" data-al="Road bike, 54 cm frame" aria-label="Road bike, 54 cm frame" style="width:48px;height:48px;border-radius:12px;background:#D5E8E8;flex:none"></span><span style="font-weight:600">Road bike, 54 cm frame</span></span></td>
-<td style="padding:12px;font-weight:700">AED 1,400</td>
-<td style="padding:12px"><span style="padding:5px 10px;border-radius:999px;background:#E4F4EA;color:#0F6B3A;font-size:12px;font-weight:700">Active</span></td>
+<td style="padding:12px"><span style="display:flex;align-items:center;gap:12px"><span role="img" data-al="Road bike, 54 cm frame" aria-label="دراجة طريق، إطار 54 سم" style="width:48px;height:48px;border-radius:12px;background:#D5E8E8;flex:none"></span><span style="font-weight:600">دراجة طريق، إطار 54 سم</span></span></td>
+<td style="padding:12px;font-weight:700">1,400 د.إ</td>
+<td style="padding:12px"><span style="padding:5px 10px;border-radius:999px;background:#E4F4EA;color:#0F6B3A;font-size:12px;font-weight:700">نشط</span></td>
 <td style="padding:12px">2</td>
-<td style="padding:12px;color:#4E5C5C">10 Nov</td>
-<td style="padding:12px;text-align:right"><span style="display:inline-flex;gap:6px">
-<button type="button" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">Edit</button>
-<button type="button" data-al="More actions for Road bike, 54 cm frame" aria-label="More actions for Road bike, 54 cm frame" style="width:44px;height:44px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
+<td style="padding:12px;color:#4E5C5C">10 نوفمبر</td>
+<td style="padding:12px;text-align:left"><span style="display:inline-flex;gap:6px">
+<button type="button" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">تعديل</button>
+<button type="button" data-al="More actions for Road bike, 54 cm frame" aria-label="إجراءات أخرى لدراجة طريق، إطار 54 سم" style="width:44px;height:44px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
 </span></td>
 </tr>
 
 <tr style="border-top:1px solid #E6DCCB">
-<td style="padding:12px"><span style="display:flex;align-items:center;gap:12px"><span role="img" data-al="Monstera plant, 1.2 m" aria-label="Monstera plant, 1.2 m" style="width:48px;height:48px;border-radius:12px;background:#DDEBE3;flex:none"></span><span style="font-weight:600">Monstera plant, 1.2 m</span></span></td>
-<td style="padding:12px;font-weight:700">AED 140</td>
-<td style="padding:12px"><span style="padding:5px 10px;border-radius:999px;background:#E4F4EA;color:#0F6B3A;font-size:12px;font-weight:700">Active</span></td>
+<td style="padding:12px"><span style="display:flex;align-items:center;gap:12px"><span role="img" data-al="Monstera plant, 1.2 m" aria-label="نبتة مونستيرا، 1.2 م" style="width:48px;height:48px;border-radius:12px;background:#DDEBE3;flex:none"></span><span style="font-weight:600">نبتة مونستيرا، 1.2 م</span></span></td>
+<td style="padding:12px;font-weight:700">140 د.إ</td>
+<td style="padding:12px"><span style="padding:5px 10px;border-radius:999px;background:#E4F4EA;color:#0F6B3A;font-size:12px;font-weight:700">نشط</span></td>
 <td style="padding:12px">0</td>
-<td style="padding:12px;color:#4E5C5C">11 Nov</td>
-<td style="padding:12px;text-align:right"><span style="display:inline-flex;gap:6px">
-<button type="button" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">Edit</button>
-<button type="button" data-al="More actions for Monstera plant, 1.2 m" aria-label="More actions for Monstera plant, 1.2 m" style="width:44px;height:44px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
+<td style="padding:12px;color:#4E5C5C">11 نوفمبر</td>
+<td style="padding:12px;text-align:left"><span style="display:inline-flex;gap:6px">
+<button type="button" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">تعديل</button>
+<button type="button" data-al="More actions for Monstera plant, 1.2 m" aria-label="إجراءات أخرى لنبتة مونستيرا، 1.2 م" style="width:44px;height:44px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
 </span></td>
 </tr>
 
 <tr style="border-top:1px solid #E6DCCB">
-<td style="padding:12px"><span style="display:flex;align-items:center;gap:12px"><span role="img" data-al="Instant film camera" aria-label="Instant film camera" style="width:48px;height:48px;border-radius:12px;background:#E9E1D3;flex:none"></span><span style="font-weight:600">Instant film camera</span></span></td>
-<td style="padding:12px;font-weight:700">AED 300</td>
-<td style="padding:12px"><span style="padding:5px 10px;border-radius:999px;background:#E4F4EA;color:#0F6B3A;font-size:12px;font-weight:700">Active</span></td>
+<td style="padding:12px"><span style="display:flex;align-items:center;gap:12px"><span role="img" data-al="Instant film camera" aria-label="كاميرا تصوير فوري" style="width:48px;height:48px;border-radius:12px;background:#E9E1D3;flex:none"></span><span style="font-weight:600">كاميرا تصوير فوري</span></span></td>
+<td style="padding:12px;font-weight:700">300 د.إ</td>
+<td style="padding:12px"><span style="padding:5px 10px;border-radius:999px;background:#E4F4EA;color:#0F6B3A;font-size:12px;font-weight:700">نشط</span></td>
 <td style="padding:12px">1</td>
-<td style="padding:12px;color:#4E5C5C">9 Nov</td>
-<td style="padding:12px;text-align:right"><span style="display:inline-flex;gap:6px">
-<button type="button" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">Edit</button>
-<button type="button" data-al="More actions for Instant film camera" aria-label="More actions for Instant film camera" style="width:44px;height:44px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
+<td style="padding:12px;color:#4E5C5C">9 نوفمبر</td>
+<td style="padding:12px;text-align:left"><span style="display:inline-flex;gap:6px">
+<button type="button" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">تعديل</button>
+<button type="button" data-al="More actions for Instant film camera" aria-label="إجراءات أخرى لكاميرا تصوير فوري" style="width:44px;height:44px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
 </span></td>
 </tr>
 
 <tr style="border-top:1px solid #E6DCCB">
-<td style="padding:12px"><span style="display:flex;align-items:center;gap:12px"><span role="img" data-al="Standing desk" aria-label="Standing desk" style="width:48px;height:48px;border-radius:12px;background:#EADFCB;flex:none"></span><span style="font-weight:600">Standing desk</span></span></td>
-<td style="padding:12px;font-weight:700">AED 900</td>
-<td style="padding:12px"><span style="padding:5px 10px;border-radius:999px;background:#E9E1D3;color:#3E4B4B;font-size:12px;font-weight:700">Sold</span></td>
+<td style="padding:12px"><span style="display:flex;align-items:center;gap:12px"><span role="img" data-al="Standing desk" aria-label="مكتب للعمل وقوفًا" style="width:48px;height:48px;border-radius:12px;background:#EADFCB;flex:none"></span><span style="font-weight:600">مكتب للعمل وقوفًا</span></span></td>
+<td style="padding:12px;font-weight:700">900 د.إ</td>
+<td style="padding:12px"><span style="padding:5px 10px;border-radius:999px;background:#E9E1D3;color:#3E4B4B;font-size:12px;font-weight:700">مُباع</span></td>
 <td style="padding:12px">4</td>
-<td style="padding:12px;color:#4E5C5C">28 Oct</td>
-<td style="padding:12px;text-align:right"><span style="display:inline-flex;gap:6px">
-<button type="button" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">Edit</button>
-<button type="button" data-al="More actions for Standing desk" aria-label="More actions for Standing desk" style="width:44px;height:44px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
+<td style="padding:12px;color:#4E5C5C">28 أكتوبر</td>
+<td style="padding:12px;text-align:left"><span style="display:inline-flex;gap:6px">
+<button type="button" style="height:44px;padding:0 14px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;color:#1B2B2C">تعديل</button>
+<button type="button" data-al="More actions for Standing desk" aria-label="إجراءات أخرى لمكتب للعمل وقوفًا" style="width:44px;height:44px;border-radius:999px;border:1px solid #E6DCCB;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1B2B2C" aria-hidden="true"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg></button>
 </span></td>
 </tr>
 
@@ -199,14 +201,14 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px">
 <section aria-labelledby="rc" style="padding:24px;border-radius:24px;background:#FFFFFF;display:flex;flex-direction:column;gap:12px">
-<h2 id="rc" style="margin:0;font-size:17px;font-weight:700">Recent conversations</h2>
-<a href="messages.html" style="display:flex;gap:12px;align-items:center;padding:10px;border-radius:14px;background:#F8F2E8;text-decoration:none"><span style="width:40px;height:40px;border-radius:999px;background:#CFE4E3;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px">PS</span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:14px">Priya S. · Wooden play kitchen</span><span style="font-size:13px;color:#4E5C5C">Offer: AED 220 — awaiting your reply</span></span></a>
-<a href="messages.html" style="display:flex;gap:12px;align-items:center;padding:10px;border-radius:14px;text-decoration:none"><span style="width:40px;height:40px;border-radius:999px;background:#D5E8E8;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px">OK</span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:14px">Omar K. · Road bike</span><span style="font-size:13px;color:#4E5C5C">Can you send a photo of the gears?</span></span></a>
+<h2 id="rc" style="margin:0;font-size:17px;font-weight:700">أحدث المحادثات</h2>
+<a href="messages.html" style="display:flex;gap:12px;align-items:center;padding:10px;border-radius:14px;background:#F8F2E8;text-decoration:none"><span style="width:40px;height:40px;border-radius:999px;background:#CFE4E3;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px">PS</span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:14px">بريا س. · مطبخ ألعاب خشبي</span><span style="font-size:13px;color:#4E5C5C">عرض: 220 د.إ — بانتظار ردّك</span></span></a>
+<a href="messages.html" style="display:flex;gap:12px;align-items:center;padding:10px;border-radius:14px;text-decoration:none"><span style="width:40px;height:40px;border-radius:999px;background:#D5E8E8;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px">OK</span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:14px">عمر ك. · دراجة طريق</span><span style="font-size:13px;color:#4E5C5C">هل يمكنك إرسال صورة لناقل الحركة؟</span></span></a>
 </section>
 <section aria-labelledby="tip" style="padding:24px;border-radius:24px;background:#197E83;color:#FFFFFF;display:flex;flex-direction:column;gap:12px">
-<h2 id="tip" style="margin:0;font-size:17px;font-weight:700">Finish your seller profile</h2>
-<p style="margin:0;font-size:14px;line-height:1.55;opacity:.9">Add a profile photo and a short bio — buyers reply faster to sellers they can picture.</p>
-<a href="storefront.html" style="align-self:flex-start;display:flex;align-items:center;height:44px;padding:0 18px;border-radius:999px;background:#FFD4C7;color:#1B2B2C;text-decoration:none;font-weight:700;font-size:14px">Complete profile</a>
+<h2 id="tip" style="margin:0;font-size:17px;font-weight:700">أكمل ملفك كبائع</h2>
+<p style="margin:0;font-size:14px;line-height:1.55;opacity:.9">أضف صورة شخصية ونبذة قصيرة — يردّ المشترون أسرع على البائعين الذين يعرفون من هم.</p>
+<a href="storefront.html" style="align-self:flex-start;display:flex;align-items:center;height:44px;padding:0 18px;border-radius:999px;background:#FFD4C7;color:#1B2B2C;text-decoration:none;font-weight:700;font-size:14px">أكمل الملف</a>
 </section>
 </div>
 </main>
@@ -217,35 +219,35 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 <div style="max-width:1280px;margin:0 auto;padding:56px clamp(16px,3vw,32px) 28px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:32px">
 <div style="display:flex;flex-direction:column;gap:14px">
-<span role="img" data-al="Freej | فريج" aria-label="Freej | فريج" style="display:block"><img src="../freej-logo-reversed.png" alt="" width="209" height="48" style="display:block;height:48px;width:auto"></span>
-<p style="margin:0;color:#F1F7F7;font-size:14px;line-height:1.6;max-width:260px">Pre-loved finds, handmade pieces and local shops, bought and sold between verified neighbours in Dubai.</p>
+<span role="img" data-al="Freej | فريج" aria-label="Freej | فريج" style="display:block"><img src="freej-logo-reversed.png" alt="" width="209" height="48" style="display:block;height:48px;width:auto"></span>
+<p style="margin:0;color:#F1F7F7;font-size:14px;line-height:1.6;max-width:260px">قطع مستعملة مميزة، ومنتجات يدوية، ومتاجر محلية، يبيعها ويشتريها جيران موثّقون في دبي.</p>
 </div>
-<nav data-al="Marketplace" aria-label="Marketplace" style="display:flex;flex-direction:column;gap:2px;font-size:14px">
-<span style="font-weight:700;margin-bottom:8px">Marketplace</span>
-<a href="about.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">About Freej</a>
-<a href="search.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Browse all</a>
-<a href="search.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Categories</a>
-<a href="storefront.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Local makers</a>
+<nav data-al="Marketplace" aria-label="السوق" style="display:flex;flex-direction:column;gap:2px;font-size:14px">
+<span style="font-weight:700;margin-bottom:8px">السوق</span>
+<a href="about.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">عن فريج</a>
+<a href="search.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">تصفّح الكل</a>
+<a href="search.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">الفئات</a>
+<a href="storefront.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">صنّاع محليون</a>
 </nav>
-<nav data-al="Selling" aria-label="Selling" style="display:flex;flex-direction:column;gap:2px;font-size:14px">
-<span style="font-weight:700;margin-bottom:8px">Selling</span>
-<a href="sell.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Start selling</a>
-<a href="dashboard.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Seller dashboard</a>
-<a href="terms.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Listing rules</a>
+<nav data-al="Selling" aria-label="البيع" style="display:flex;flex-direction:column;gap:2px;font-size:14px">
+<span style="font-weight:700;margin-bottom:8px">البيع</span>
+<a href="sell.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">ابدأ البيع</a>
+<a href="dashboard.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">لوحة البائع</a>
+<a href="terms.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">قواعد الإعلانات</a>
 </nav>
-<nav data-al="Help and legal" aria-label="Help and legal" style="display:flex;flex-direction:column;gap:2px;font-size:14px">
-<span style="font-weight:700;margin-bottom:8px">Help &amp; legal</span>
-<a href="terms.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Terms &amp; Conditions</a>
-<a href="privacy.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Privacy Policy</a>
-<a href="cookies.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Cookie settings</a>
-<a href="terms.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Report a listing</a>
+<nav data-al="Help and legal" aria-label="المساعدة والشؤون القانونية" style="display:flex;flex-direction:column;gap:2px;font-size:14px">
+<span style="font-weight:700;margin-bottom:8px">المساعدة والقانونية</span>
+<a href="terms.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">الشروط والأحكام</a>
+<a href="privacy.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">سياسة الخصوصية</a>
+<a href="cookies.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">إعدادات ملفات تعريف الارتباط</a>
+<a href="terms.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">الإبلاغ عن إعلان</a>
 </nav>
 </div>
 <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-top:24px;border-top:1px solid #3C8F93;font-size:13px;color:#F1F7F7">
-<span>© 2026 Freej · [COMPANY LEGAL NAME], United Arab Emirates</span>
+<span>© 2026 فريج · [COMPANY LEGAL NAME]، الإمارات العربية المتحدة</span>
 <span style="display:flex;gap:8px;align-items:center">
 <a href="mailto:hello@freej.ae" style="color:#FFFFFF;min-height:44px;display:flex;align-items:center;padding:0 8px">hello@freej.ae</a>
-<a href="../dashboard.html" class="lang-foot" data-lang="ar" lang="ar" hreflang="ar">العربية</a>
+<a href="dashboard-en.html" class="lang-foot" data-lang="en" lang="en" hreflang="en">English</a>
 </span>
 </div>
 </div>
@@ -253,16 +255,16 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 
 </div>
 
-<nav class="tabbar" data-al="App" aria-label="App"><a class="press" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z"></path></svg>Home</a><a class="press" href="search.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-3.5-3.5"></path></svg>Search</a><a class="sell press" href="sell.html" data-al="Sell an item" aria-label="Sell an item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></a><a class="press" href="messages.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path></svg>Inbox</a><a class="press" href="dashboard.html" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>Me</a></nav>
-<section role="region" id="cookie-banner" hidden aria-labelledby="cc-h" style="position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:760px;margin:0 auto;padding:22px;border-radius:24px;background:#FFFFFF;border:1.5px solid #1B2B2C;box-shadow:0 18px 48px rgba(20,22,26,.18);display:flex;flex-direction:column;gap:14px;box-sizing:border-box">
-<h2 id="cc-h" style="margin:0;font-size:18px;font-weight:700">Cookies on Freej</h2>
-<p style="margin:0;font-size:15px;line-height:1.55;color:#2E3D3D">We use essential cookies to keep you signed in and the site secure. With your permission we’d also use analytics cookies to see which features help. <a href="privacy.html">Read our Privacy Policy</a>.</p>
+<nav class="tabbar" data-al="App" aria-label="التطبيق"><a class="press" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z"></path></svg>الرئيسية</a><a class="press" href="search.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-3.5-3.5"></path></svg>بحث</a><a class="sell press" href="sell.html" data-al="Sell an item" aria-label="أضف إعلانًا"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></a><a class="press" href="messages.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path></svg>الوارد</a><a class="press" href="dashboard.html" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>حسابي</a></nav>
+<section role="region" id="cookie-banner" hidden aria-labelledby="cc-h" style="position:fixed;right:16px;left:16px;bottom:16px;z-index:50;max-width:760px;margin:0 auto;padding:22px;border-radius:24px;background:#FFFFFF;border:1.5px solid #1B2B2C;box-shadow:0 18px 48px rgba(20,22,26,.18);display:flex;flex-direction:column;gap:14px;box-sizing:border-box">
+<h2 id="cc-h" style="margin:0;font-size:18px;font-weight:700">ملفات تعريف الارتباط على فريج</h2>
+<p style="margin:0;font-size:15px;line-height:1.55;color:#2E3D3D">نستخدم ملفات تعريف الارتباط الضرورية لإبقائك مسجّلًا وللحفاظ على أمان الموقع. وبموافقتك، نستخدم أيضًا ملفات التحليلات لنعرف أي الميزات تفيدك. <a href="privacy.html">اقرأ سياسة الخصوصية</a>.</p>
 <div style="display:flex;flex-wrap:wrap;gap:10px">
-<button type="button" data-action="accept" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">Accept all</button>
-<button type="button" data-action="reject" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">Essential only</button>
-<a href="cookies.html" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:1.5px solid #1B2B2C;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:15px;font-weight:700">Manage choices</a>
+<button type="button" data-action="accept" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">قبول الكل</button>
+<button type="button" data-action="reject" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">الضرورية فقط</button>
+<a href="cookies.html" class="btn" style="flex:1 1 160px;height:48px;border-radius:999px;border:1.5px solid #1B2B2C;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:15px;font-weight:700">إدارة الاختيارات</a>
 </div>
 </section>
-<script src="../site.js" defer></script>
+<script src="site.js" defer></script>
 </body>
 </html>
