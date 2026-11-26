@@ -331,3 +331,16 @@ html[lang="ar"] p,html[lang="ar"] li{line-height:1.75}
 @media (max-width:374px){.site-header .logo-img{height:38px!important}}
 @media (max-width:340px){.site-header .logo-img{height:34px!important}}
 section[aria-labelledby="hero-h"] div:has(> a[href^="search"].btn) > span{white-space:nowrap;flex:none}
+
+/* ===== Shop header: only the logo overlaps the cover; name and actions sit below it ===== */
+@media (min-width:641px){
+  main section:has(> span[data-al$="logo"]){display:grid!important;grid-template-columns:auto minmax(0,1fr) auto;column-gap:24px!important;row-gap:12px!important;align-items:start!important}
+  main section:has(> span[data-al$="logo"]) > span[data-al$="logo"]{grid-row:1 / span 2}
+  main section:has(> span[data-al$="logo"]) > div:nth-of-type(1){margin-top:84px;padding-bottom:0!important}
+  main section:has(> span[data-al$="logo"]) > div:nth-of-type(2){margin-top:88px;padding-bottom:0!important;align-self:start}
+}
+@media (min-width:641px) and (max-width:1100px){
+  main section:has(> span[data-al$="logo"]){grid-template-columns:auto minmax(0,1fr)}
+  main section:has(> span[data-al$="logo"]) > div:nth-of-type(2){grid-column:2;margin-top:4px}
+}
+@media (min-width:1101px){html[lang="en"] main section:has(> span[data-al$="logo"]) > div:nth-of-type(2){margin-top:81px}}
