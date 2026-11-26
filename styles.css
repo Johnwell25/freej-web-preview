@@ -71,9 +71,9 @@ html:not(.seen) body[data-page="Home"] section[aria-labelledby="hero-h"]>div:nth
   .tabbar a[aria-current="page"]::before{content:"";position:absolute;top:2px;width:5px;height:5px;background:#D84B33;transform:rotate(45deg)}
   .tabbar .sell{justify-self:center;width:52px;height:52px;min-height:0;border-radius:18px;background:#197E83;color:#FFFFFF}
   .site-header nav[aria-label="Main"]{display:none!important}
-  body:not([data-page="Listing"]):not([data-page="Cookies"]){padding-bottom:calc(66px + env(safe-area-inset-bottom))}
-  body[data-page="Listing"] .tabbar,body[data-page="Cookies"] .tabbar{display:none}
-  body:not([data-page="Listing"]) #cookie-banner{bottom:calc(74px + env(safe-area-inset-bottom))!important}
+  body:not([data-page="Listing"]):not([data-page="Cookies"]):not([data-page="Verify"]){padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+  body[data-page="Listing"] .tabbar,body[data-page="Cookies"] .tabbar,body[data-page="Verify"] .tabbar{display:none}
+  body:not([data-page="Listing"]):not([data-page="Verify"]) #cookie-banner{bottom:calc(74px + env(safe-area-inset-bottom))!important}
 }
 
 /* Filters: bottom sheet on tablets & phones */
@@ -101,4 +101,39 @@ html:not(.seen) body[data-page="Home"] section[aria-labelledby="hero-h"]>div:nth
   #filters.filters:not(.open){opacity:0}
   button:active,.btn:active,.press:active,.lift:active{transform:none!important}
   button[aria-label^="Save"][aria-pressed="true"] svg{transform:none}
+}
+
+/* ===== Mobile polish (phones ≤640px) ===== */
+.preview-bar{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:640px){
+  /* Header: logo left, inbox + profile right, search full width below */
+  .site-header > div{padding:10px 16px 12px!important;gap:10px 12px!important;align-items:center!important}
+  .site-header .logo-img{height:34px!important}
+  .site-header nav[aria-label="Main"]{display:flex!important;gap:2px!important;margin-left:auto}
+  .site-header nav[aria-label="Main"] a[href="sell.html"]{display:none!important}
+  .site-header nav[aria-label="Main"] a[aria-label="Your account"]{width:40px!important;height:40px!important}
+  .site-header form[role="search"]{height:46px!important}
+  /* Listing grids: two columns like an app */
+  main ul[style*="minmax(min(100%,230px)"],main ul[style*="minmax(min(100%,220px)"],main ul[style*="minmax(220px"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:22px 12px!important}
+  main ul[style*="minmax(min(100%,230px)"] li button[aria-label^="Save"],main ul[style*="minmax(min(100%,220px)"] li button[aria-label^="Save"]{width:36px!important;height:36px!important;right:8px!important;top:8px!important}
+  main ul[style*="minmax(min(100%,230px)"] li>a>span:last-child>span:first-child,main ul[style*="minmax(min(100%,220px)"] li>a>span:last-child>span:first-child{font-size:17px!important}
+  /* Popular chips: one scrolling row */
+  section[aria-labelledby="hero-h"] div:has(> a[href="search.html"].btn){flex-wrap:nowrap!important;overflow-x:auto;margin-right:-16px;padding-right:16px;scrollbar-width:none}
+  section[aria-labelledby="hero-h"] div:has(> a[href="search.html"].btn) a{flex:none;white-space:nowrap}
+  /* Dashboard side menu becomes a scrolling tab row */
+  nav[aria-label="Dashboard"]{flex-direction:row!important;max-width:none!important;flex:1 1 100%!important;overflow-x:auto;padding:6px!important;gap:4px!important;scrollbar-width:none}
+  nav[aria-label="Dashboard"] a{flex:none;white-space:nowrap;min-height:40px!important}
+  /* Shop pages: smaller logo and name */
+  span[role="img"][aria-label$="logo"]{width:96px!important;height:96px!important;border-radius:26px!important;font-size:30px!important;border-width:4px!important}
+  main section h1[style*="font-size:44px"]{font-size:32px!important}
+  main section:has(span[aria-label$="logo"]){margin-top:-48px!important;gap:16px!important}
+  /* Chat: offer buttons stay on one line */
+  li button.btn{white-space:nowrap;font-size:14px!important;padding:0 12px!important}
+  /* Section headings a touch tighter */
+  main h2[style*="clamp(32px"]{font-size:30px!important}
+}
+@media (max-width:640px){
+  section[aria-labelledby="hero-h"] > div:nth-child(2){min-height:320px!important;grid-template-rows:repeat(2,minmax(140px,1fr))!important}
+  section[aria-labelledby="hero-h"] > div:nth-child(2) > a > span[style*="bottom:14px"]{left:10px!important;right:10px!important;bottom:10px!important;flex-direction:column!important;align-items:flex-start!important;gap:2px!important;padding:8px 12px!important}
+  section[aria-labelledby="hero-h"] > div:nth-child(2) > a > span[style*="bottom:14px"] span{white-space:nowrap;font-size:13px!important}
 }

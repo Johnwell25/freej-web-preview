@@ -28,14 +28,14 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 .lift{transition:transform .2s ease}.lift:hover{transform:translateY(-2px)}
 .hdr-search{flex:1 1 360px}
 @media (max-width:860px){.hdr-search{order:3;flex-basis:100%!important}}
-@media (max-width:640px){.hide-sm{display:none!important}.logo-img{height:32px!important}}
+@media (max-width:640px){.hide-sm{display:none!important}.logo-img{height:40px!important}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="Privacy">
-<div class="preview-bar" role="note">Design preview — listings, people and messages are sample content.</div>
+<div class="preview-bar" role="note">Design preview: sample listings and people</div>
 
 
 <div style="width:100%;position:relative;font-family:Inter,system-ui,sans-serif;color:#1B2B2C;background:#FFFFFF">
@@ -45,21 +45,22 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 <header class="site-header" style="width:100%;background:#FFFFFF;border-bottom:1px solid #E6DCCB;font-family:Inter,system-ui,sans-serif;color:#1B2B2C">
 <div style="max-width:1280px;margin:0 auto;padding:14px clamp(16px,3vw,32px);box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px">
 <a href="index.html" aria-label="Freej — home" class="btn" style="display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:#1B2B2C">
-<img class="logo-img" src="freej-logo.png" alt="" width="174" height="40" style="display:block;height:40px;width:auto">
+<img class="logo-img" src="freej-logo.png" alt="" width="227" height="52" style="display:block;height:52px;width:auto">
 </a>
 <form role="search" action="search.html" class="hdr-search" style="flex:1 1 360px;display:flex;align-items:center;gap:10px;height:50px;padding:0 5px 0 16px;border:1.5px solid #1B2B2C;border-radius:999px;box-sizing:border-box;background:#FFFFFF;max-width:none">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4E5C5C" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
 <label for="site-q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Search listings</label>
-<input id="site-q" name="q" type="search" value="" placeholder="Search furniture, bikes, handmade gifts…" style="flex:1;min-width:0;height:44px;border:0;outline:none;font:inherit;font-size:16px;background:transparent;color:#1B2B2C">
+<input id="site-q" name="q" type="search" value="" placeholder="Search items near you" style="flex:1;min-width:0;height:44px;border:0;outline:none;font:inherit;font-size:16px;background:transparent;color:#1B2B2C">
 <button type="submit" class="btn" style="height:40px;padding:0 18px;border-radius:999px;border:0;background:#197E83;color:#FFFFFF;font:inherit;font-size:15px;font-weight:700;cursor:pointer">Search</button>
 </form>
 <nav aria-label="Main" style="margin-left:auto;display:flex;align-items:center;gap:4px">
 <a href="search.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">Browse</a>
 <a href="storefront.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">Local makers</a>
+<a href="business.html" class="hide-sm" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px">Local shops</a>
 <a href="messages.html" aria-label="Messages, 2 unread" style="position:relative;width:44px;height:44px;border-radius:999px;display:flex;align-items:center;justify-content:center;color:#1B2B2C">
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path></svg>
 <span aria-hidden="true" style="position:absolute;top:6px;right:5px;min-width:18px;height:18px;border-radius:999px;background:#197E83;color:#FFFFFF;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">2</span></a>
-<a href="dashboard.html" class="btn" style="display:flex;align-items:center;gap:6px;height:44px;padding:0 18px;border-radius:999px;background:#1B2B2C;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>Sell</a>
+<a href="sell.html" class="btn" style="display:flex;align-items:center;gap:6px;height:44px;padding:0 18px;border-radius:999px;background:#1B2B2C;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>Sell</a>
 <a href="dashboard.html" aria-label="Your account" style="width:44px;height:44px;border-radius:999px;background:#D5E8E8;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;font-size:14px;color:#1B2B2C">RJ</a>
 </nav>
 </div>
@@ -84,7 +85,7 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 <li><a href="#basis" style="display:flex;align-items:center;min-height:40px;font-size:14px;color:#2E3D3D;text-decoration:none">4. Why we are allowed to use it</a></li>
 <li><a href="#share" style="display:flex;align-items:center;min-height:40px;font-size:14px;color:#2E3D3D;text-decoration:none">5. Who we share it with</a></li>
 <li><a href="#transfer" style="display:flex;align-items:center;min-height:40px;font-size:14px;color:#2E3D3D;text-decoration:none">6. Data stored outside the UAE</a></li>
-<li><a href="#retain" style="display:flex;align-items:center;min-height:40px;font-size:14px;color:#2E3D3D;text-decoration:none">7. How long we keep it</a></li>
+<li><a href="#retain" style="display:flex;align-items:center;min-height:40px;font-size:14px;color:#2E3D3D;text-decoration:none">7. How long we keep it, and closing your account</a></li>
 <li><a href="#rights" style="display:flex;align-items:center;min-height:40px;font-size:14px;color:#2E3D3D;text-decoration:none">8. Your rights</a></li>
 <li><a href="#security" style="display:flex;align-items:center;min-height:40px;font-size:14px;color:#2E3D3D;text-decoration:none">9. Security</a></li>
 <li><a href="#children" style="display:flex;align-items:center;min-height:40px;font-size:14px;color:#2E3D3D;text-decoration:none">10. Age limit</a></li>
@@ -99,8 +100,9 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">
 <li style="display:flex;gap:10px;font-size:15px;line-height:1.55"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#197E83" stroke-width="2.4" aria-hidden="true" style="flex:none;margin-top:3px"><path d="m5 12 5 5 9-10"></path></svg><span>We collect what we need to run your account, listings and chats — nothing is sold to advertisers.</span></li>
 <li style="display:flex;gap:10px;font-size:15px;line-height:1.55"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#197E83" stroke-width="2.4" aria-hidden="true" style="flex:none;margin-top:3px"><path d="m5 12 5 5 9-10"></path></svg><span>Other members see your public profile and listings, never your phone number or email unless you share them.</span></li>
+<li style="display:flex;gap:10px;font-size:15px;line-height:1.55"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#197E83" stroke-width="2.4" aria-hidden="true" style="flex:none;margin-top:3px"><path d="m5 12 5 5 9-10"></path></svg><span>We check every member’s Emirates ID once, then delete the ID images and keep only the result.</span></li>
 <li style="display:flex;gap:10px;font-size:15px;line-height:1.55"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#197E83" stroke-width="2.4" aria-hidden="true" style="flex:none;margin-top:3px"><path d="m5 12 5 5 9-10"></path></svg><span>Analytics cookies are off until you say yes; you can change your mind any time.</span></li>
-<li style="display:flex;gap:10px;font-size:15px;line-height:1.55"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#197E83" stroke-width="2.4" aria-hidden="true" style="flex:none;margin-top:3px"><path d="m5 12 5 5 9-10"></path></svg><span>You can ask to see, correct, export or delete your data by emailing privacy@freej.ae.</span></li>
+<li style="display:flex;gap:10px;font-size:15px;line-height:1.55"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#197E83" stroke-width="2.4" aria-hidden="true" style="flex:none;margin-top:3px"><path d="m5 12 5 5 9-10"></path></svg><span>Close your account and we delete your personal data, apart from records the law requires us to keep.</span></li>
 </ul>
 <p style="margin:0;font-size:13px;color:#4E5C5C">This summary helps you read the policy; the full text below is what applies.</p>
 </aside>
@@ -110,11 +112,11 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 </section>
 <section id="collect" aria-labelledby="collect-h" style="display:flex;flex-direction:column;gap:12px;padding-top:8px">
 <h2 id="collect-h" style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:26px;letter-spacing:0">2. Data we collect</h2>
-<ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-size:16px;line-height:1.65;color:#2E3D3D"><li><strong>Account details:</strong> name, email, phone number, password (stored hashed), profile photo and area.</li><li><strong>Listings:</strong> photos, descriptions, prices, category and approximate location.</li><li><strong>Messages and offers:</strong> the content of chats, offers and handover arrangements between members.</li><li><strong>Verification:</strong> confirmation that your email and phone number belong to you.</li><li><strong>Device and usage:</strong> IP address, browser type, pages viewed and error logs, used for security and to keep the site working.</li><li><strong>Reports:</strong> details you send when you report a listing or a member.</li></ul>
+<ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-size:16px;line-height:1.65;color:#2E3D3D"><li><strong>Account details:</strong> name, email, mobile number, password (stored hashed), profile photo and area.</li><li><strong>Identity check:</strong> your Emirates ID details, checked through UAE PASS or by an ID verification provider using photos of your card and a selfie. We delete the images once the check passes and keep the result, your ID number and its expiry date.</li><li><strong>Business details</strong> (business sellers only): trade name, licence number, issuing authority, expiry date and a copy of your licence.</li><li><strong>Listings:</strong> photos, descriptions, prices, category and approximate location.</li><li><strong>Messages and offers:</strong> the content of chats, offers and handover arrangements between members.</li><li><strong>One-time codes:</strong> codes we send to your email and mobile number to confirm they are active and yours.</li><li><strong>Device and usage:</strong> IP address, browser type, pages viewed and error logs, used for security and to keep the site working.</li><li><strong>Reports:</strong> details you send when you report a listing or a member.</li></ul>
 </section>
 <section id="use" aria-labelledby="use-h" style="display:flex;flex-direction:column;gap:12px;padding-top:8px">
 <h2 id="use-h" style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:26px;letter-spacing:0">3. How we use it</h2>
-<ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-size:16px;line-height:1.65;color:#2E3D3D"><li>To create and secure your account and let you list, search and message.</li><li>To show your listings and public profile to other members.</li><li>To prevent fraud, spam and prohibited items, and to review reports.</li><li>To send service messages, such as new-message alerts and security notices.</li><li>With your consent, to measure which features help, using analytics cookies.</li></ul>
+<ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-size:16px;line-height:1.65;color:#2E3D3D"><li>To create and secure your account and let you list, search and message.</li><li>To verify that every buyer and seller is a real person, and that business sellers hold a valid licence.</li><li>To show your listings and public profile to other members.</li><li>To prevent fraud, spam and prohibited items, and to review reports.</li><li>To send service messages, such as new-message alerts and security notices.</li><li>With your consent, to measure which features help, using analytics cookies.</li></ul>
 </section>
 <section id="basis" aria-labelledby="basis-h" style="display:flex;flex-direction:column;gap:12px;padding-top:8px">
 <h2 id="basis-h" style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:26px;letter-spacing:0">4. Why we are allowed to use it</h2>
@@ -122,15 +124,15 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 </section>
 <section id="share" aria-labelledby="share-h" style="display:flex;flex-direction:column;gap:12px;padding-top:8px">
 <h2 id="share-h" style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:26px;letter-spacing:0">5. Who we share it with</h2>
-<ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-size:16px;line-height:1.65;color:#2E3D3D"><li><strong>Other members:</strong> your display name, profile photo, area, listings and the messages you send them.</li><li><strong>Service providers</strong> who run parts of Freej for us under contract: our marketplace platform (Sharetribe), hosting, email delivery, error monitoring and — only with your consent — analytics. Full list: [PROVIDER LIST].</li><li><strong>Authorities</strong> when the law requires it, or to protect someone’s safety.</li></ul><p style="margin:0;font-size:16px;line-height:1.7;color:#2E3D3D">We do not sell your personal data.</p>
+<ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-size:16px;line-height:1.65;color:#2E3D3D"><li><strong>Other members:</strong> your display name, profile photo, area, listings and the messages you send them.</li><li><strong>Service providers</strong> who run parts of Freej for us under contract: our marketplace platform (Sharetribe), UAE PASS or our ID verification provider, email and SMS delivery, hosting, error monitoring and, only with your consent, analytics. Full list: [PROVIDER LIST].</li><li><strong>Authorities</strong> when the law requires it, or to protect someone’s safety.</li></ul><p style="margin:0;font-size:16px;line-height:1.7;color:#2E3D3D">We do not sell your personal data.</p>
 </section>
 <section id="transfer" aria-labelledby="transfer-h" style="display:flex;flex-direction:column;gap:12px;padding-top:8px">
 <h2 id="transfer-h" style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:26px;letter-spacing:0">6. Data stored outside the UAE</h2>
 <p style="margin:0;font-size:16px;line-height:1.7;color:#2E3D3D">Some providers store data outside the UAE, for example in the European Union. Where that happens we use contractual and technical safeguards so your data stays protected to the standard this policy describes. [CONFIRM COUNTRIES AND SAFEGUARDS]</p>
 </section>
 <section id="retain" aria-labelledby="retain-h" style="display:flex;flex-direction:column;gap:12px;padding-top:8px">
-<h2 id="retain-h" style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:26px;letter-spacing:0">7. How long we keep it</h2>
-<p style="margin:0;font-size:16px;line-height:1.7;color:#2E3D3D">We keep account data while your account is open. When you delete your account we remove your profile and listings within [30] days; messages are kept for [12] months for safety and dispute handling, unless the law requires longer, then deleted.</p>
+<h2 id="retain-h" style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:26px;letter-spacing:0">7. How long we keep it, and closing your account</h2>
+<p style="margin:0;font-size:16px;line-height:1.7;color:#2E3D3D">We keep account data while your account is open. We keep your data while your account is open. ID images are deleted as soon as your identity check passes. When you close your account, we delete your profile, listings, messages and documents straight away, and your email, mobile number and name within 30 days. We keep only what the law requires: records of any payments to Freej for 5 years under the UAE Commercial Transactions Law, and data linked to an open report, dispute or request from the authorities until it is resolved.</p>
 </section>
 <section id="rights" aria-labelledby="rights-h" style="display:flex;flex-direction:column;gap:12px;padding-top:8px">
 <h2 id="rights-h" style="margin:0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:26px;letter-spacing:0">8. Your rights</h2>
@@ -162,7 +164,7 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:32px">
 <div style="display:flex;flex-direction:column;gap:14px">
 <span role="img" aria-label="Freej | فريج" style="display:block"><img src="freej-logo-reversed.png" alt="" width="174" height="40" style="display:block;height:40px;width:auto"></span>
-<p style="margin:0;color:#F1F7F7;font-size:14px;line-height:1.6;max-width:260px">Second-hand and handmade, bought and sold between neighbours across the UAE.</p>
+<p style="margin:0;color:#F1F7F7;font-size:14px;line-height:1.6;max-width:260px">Pre-loved finds, handmade pieces and local shops, bought and sold between verified neighbours in Dubai.</p>
 </div>
 <nav aria-label="Marketplace" style="display:flex;flex-direction:column;gap:2px;font-size:14px">
 <span style="font-weight:700;margin-bottom:8px">Marketplace</span>
@@ -172,7 +174,7 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 </nav>
 <nav aria-label="Selling" style="display:flex;flex-direction:column;gap:2px;font-size:14px">
 <span style="font-weight:700;margin-bottom:8px">Selling</span>
-<a href="dashboard.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">List an item</a>
+<a href="sell.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Start selling</a>
 <a href="dashboard.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Seller dashboard</a>
 <a href="terms.html" style="color:#FFFFFF;min-height:36px;display:flex;align-items:center">Listing rules</a>
 </nav>
@@ -196,7 +198,7 @@ a{color:#1B2B2C;text-underline-offset:3px}a:hover{color:#146A6E}
 
 </div>
 
-<nav class="tabbar" aria-label="App"><a class="press" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z"></path></svg>Home</a><a class="press" href="search.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-3.5-3.5"></path></svg>Search</a><a class="sell press" href="dashboard.html" aria-label="Sell an item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></a><a class="press" href="messages.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path></svg>Inbox</a><a class="press" href="dashboard.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>Me</a></nav>
+<nav class="tabbar" aria-label="App"><a class="press" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z"></path></svg>Home</a><a class="press" href="search.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-3.5-3.5"></path></svg>Search</a><a class="sell press" href="sell.html" aria-label="Sell an item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></a><a class="press" href="messages.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path></svg>Inbox</a><a class="press" href="dashboard.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>Me</a></nav>
 <section role="region" id="cookie-banner" hidden aria-labelledby="cc-h" style="position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:760px;margin:0 auto;padding:22px;border-radius:24px;background:#FFFFFF;border:1.5px solid #1B2B2C;box-shadow:0 18px 48px rgba(20,22,26,.18);display:flex;flex-direction:column;gap:14px;box-sizing:border-box">
 <h2 id="cc-h" style="margin:0;font-size:18px;font-weight:700">Cookies on Freej</h2>
 <p style="margin:0;font-size:15px;line-height:1.55;color:#2E3D3D">We use essential cookies to keep you signed in and the site secure. With your permission we’d also use analytics cookies to see which features help. <a href="privacy.html">Read our Privacy Policy</a>.</p>
